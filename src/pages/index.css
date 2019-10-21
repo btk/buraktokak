@@ -1,0 +1,68 @@
+.making, .made {
+  padding-top: 30px;
+}
+
+.making ul, .made ul {
+  margin: 0px;
+}
+
+.making li, .made li {
+  list-style: none;
+}
+
+.making li span, .made li span {
+  opacity: 0.7;
+}
+
+.making li b, .made li b {
+  font-weight: 600;
+}
+
+.tags {
+  margin: 20px 0px;
+  padding-top: 30px;
+}
+
+.tags div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  background: #f3f3f3;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 0.85em;
+}
+
+
+.contact {
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+  background: #eee;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 200ms all;
+  box-shadow: 0px 2px 5px -5px rgba(0,0,0,0);
+}
+
+.contact:hover {
+  box-shadow: 0px 2px 10px -5px rgba(0,0,0,0.5);
+  background: #fafafa;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .making li span, .made li span {
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 4px;
+  }
+}
