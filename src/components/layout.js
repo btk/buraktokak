@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer style={{fontSize: "0.9em", paddingTop: 20, paddingBottom: 30}}>
           Copyright © {new Date().getFullYear()}, {` `} Burak Tokak<br/>
-          <small>I operate, accept payments & pay taxes under my sole proprietorship enterprise in Republic of Turkey.</small>
+          <small>I operate, accept payments & pay taxes under my company <a href="https://dreamoriented.org" target="_blank">Dream Oriented Ltd</a> in Republic of Turkey.</small>
           <br/>
           <small><a href="https://www.gatsbyjs.org/" target="_blank">💜 Gatsby</a></small>
         </footer>

@@ -66,17 +66,20 @@ class IndexPage extends React.Component {
           <h3>Currently</h3>
           <ul>
             <li>Making    💪 <b>worko</b>, <span>a workout guide app with hq videos</span></li>
-            <li>Making    📝 <b>Memo App</b>, <span>a smart note taking app</span></li>
             <li>Creating  🈳 <b>Anlam</b>, <span>an open source statistical Turkish NLP library in JS</span></li>
             <li>Writing   📓 <b>Making Apps with React</b>, <span>an open access book in Turkish</span></li>
-            <li>Maintaining 💊 <a href="https://drcanciftci.com/" target="_blank"><b>Dr. Can Supplementleri</b></a>, <span>an e-commerce website</span></li>
+            <li>Making    🌌 <b>Beyond Mars</b>, <span>a dice based mobile space exploration game</span></li>
           </ul>
         </div>
 
         <div className="made">
           <h3>Past</h3>
           <ul>
-            <li>Made ⚗️ <a href="https://iconsrepo.com/" target="_blank"><b>IconsRepo</b></a>, <span>a tool to edit PD&CC icons and download</span></li>
+            <li>Made    💾 <a href="https://svgapi.com/" target="_blank"><b>svgapi</b></a>, <span>a saas Rest API to list and search SVG icons</span></li>
+            <li>Shipped 📝 <a href="https://usememo.com/" target="_blank"><b>Memo</b></a>, <span>a smart note taking app using GH Gists</span></li>
+            <li>Helped 👾 <a href="https://apps.apple.com/us/app/mola-arcade-space-shooter/id1493319285" target="_blank"><b>Mola</b></a>, <span>a mobile arcade space shooter game</span></li>
+            <li>Maintained 💊 <a href="https://drcanciftci.com/" target="_blank"><b>Dr. Can Supplementleri</b></a>, <span>an e-commerce website</span></li>
+            <li>Made ⚗️ <a href="https://iconsrepo.com/" target="_blank"><b>IconsRepo</b></a>, <span>a tool to edit PD&CC  icons and download</span></li>
             <li>Made 🤔 <a href="https://www.dreamoriented.org/wordmoji/" target="_blank"><b>Wordmoji</b></a>, <span>a casual mobile emoji quiz game</span></li>
             <li>Made 🤞 <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.leeloo" target="_blank"><b>Leeloo AAC</b></a>, <span>a simple open source multilangulal mobile AAC app</span></li>
             <li>Graduated 💻 <b>Computer Engineering</b>, <span>bachelor's degree from Ankara University</span></li>
