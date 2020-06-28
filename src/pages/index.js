@@ -65,9 +65,13 @@ class IndexPage extends React.Component {
         <div className="making">
           <h3>Currently</h3>
           <ul>
-            <li>Making    💪 <b>worko</b>, <span>a workout guide app with hq videos</span></li>
+            <li>Working for 🍃 <b>Dream Oriented</b>, <span>making assistive accessibility software</span></li>
+            <li>Working for 🔰 <b>Stratera Games</b>, <span>making fun mobile games</span></li>
+            <li>Attending 🏫 <b>Software Engineering</b>, <span>master's program at METU</span></li>
+            <li>Making    🌐 <b>Assistive Cards</b>, <span>a library of assistive cards in 37 languages</span></li>
+            <li>Making    🦙 <b>Huni AI</b>, <span>an AI powered mobile speech therapy app</span></li>
+            <li>Making    🧠 <b>Strategy Game</b>, <span>an undisclosed strategy game</span></li>
             <li>Creating  🈳 <b>Anlam</b>, <span>an open source statistical Turkish NLP library in JS</span></li>
-            <li>Writing   📓 <b>Making Apps with React</b>, <span>an open access book in Turkish</span></li>
             <li>Making    🌌 <b>Beyond Mars</b>, <span>a dice based mobile space exploration game</span></li>
           </ul>
         </div>
@@ -75,11 +79,16 @@ class IndexPage extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Helped Release 🏃‍♂️ <a href="" target="_blank"><b>Virar Firar</b></a>, <span>an arcade runner game with 4 influencers</span></li>
+            <li>Designed 🔰 <a href="https://dreamoriented.org/" target="_blank"><b>Stratera Games Website</b></a>, <span>a website for the company</span></li>
+            <li>Re-Made 🦜 <a href="https://apps.apple.com/us/app/id1517824465" target="_blank"><b>Wordmoji</b></a>, <span>a new version of Wordmoji on ios</span></li>
+            <li>Co-Made 🐰 <a href="https://apps.apple.com/us/app/leeloo-aac-autism-speech-app/id1508952198" target="_blank"><b>Leeloo AAC</b></a>, <span>a new version of Leeloo on ios</span></li>
+            <li>Founded 🔵 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>a website for the company</span></li>
+            <li>Written 📓 <a href="https://play.google.com/store/books/details?id=EL7tDwAAQBAJ" target="_blank"><b>React ile Uygulama Geliştirme</b></a>, <span>an tutorial ebook in Turkish</span></li>
             <li>Made    💾 <a href="https://svgapi.com/" target="_blank"><b>svgapi</b></a>, <span>a saas Rest API to list and search SVG icons</span></li>
             <li>Shipped 📝 <a href="https://usememo.com/" target="_blank"><b>Memo</b></a>, <span>a smart note taking app using GH Gists</span></li>
             <li>Helped 👾 <a href="https://apps.apple.com/us/app/mola-arcade-space-shooter/id1493319285" target="_blank"><b>Mola</b></a>, <span>a mobile arcade space shooter game</span></li>
             <li>Maintained 💊 <a href="https://drcanciftci.com/" target="_blank"><b>Dr. Can Supplementleri</b></a>, <span>an e-commerce website</span></li>
-            <li>Made ⚗️ <a href="https://iconsrepo.com/" target="_blank"><b>IconsRepo</b></a>, <span>a tool to edit PD&CC  icons and download</span></li>
             <li>Made 🤔 <a href="https://www.dreamoriented.org/wordmoji/" target="_blank"><b>Wordmoji</b></a>, <span>a casual mobile emoji quiz game</span></li>
             <li>Made 🤞 <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.leeloo" target="_blank"><b>Leeloo AAC</b></a>, <span>a simple open source multilangulal mobile AAC app</span></li>
             <li>Graduated 💻 <b>Computer Engineering</b>, <span>bachelor's degree from Ankara University</span></li>
