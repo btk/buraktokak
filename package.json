@@ -31,7 +31,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "push": "gatsby build && aws s3 rm s3://www.buraktokak.com --recursive && aws s3 cp public s3://www.buraktokak.com --recursive",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
