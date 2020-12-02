@@ -68,9 +68,10 @@ class IndexPage extends React.Component {
             <li>Working for 🎈 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>making assistive accessibility software</span></li>
             <li>Working for 🔰 <a href="https://stratera.co/" target="_blank"><b>Stratera Games</b></a>, <span>making fun mobile games</span></li>
             <li>Attending 🏫 <b>Software Engineering</b>, <span>master's program at METU</span></li>
-            <li>Making    🧠 <b>Strategy Game</b>, <span>an undisclosed strategy game</span></li>
+            <li>Making    🌐 <a href="https://assistivecards.com/" target="_blank"><b>Assistive Cards</b></a>, <span>a library of assistive cards in 37 languages</span></li>
             <li>Making    🦙 <b>Huni AI</b>, <span>an AI powered mobile speech therapy app</span></li>
             <li>Coordinating    🦅 <b>Wingo</b>, <span>a daily planner app for kids</span></li>
+            <li>Making    🏴‍☠️ <b>Kraken vs Sharks</b>, <span>a mobile strategy game</span></li>
             <li>Creating  🈳 <b>Anlam</b>, <span>an open source statistical Turkish NLP library in JS</span></li>
             <li>Making    🌌 <b>Beyond Mars</b>, <span>a dice based mobile space exploration game</span></li>
           </ul>
@@ -79,6 +80,10 @@ class IndexPage extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Featured by 🌐 <a href="https://www.svgrepo.com/adobexd" target="_blank"><b>UNICEF</b></a>, <span>at Covid-19 App catalogue</span></li>
+            <li>Built 📌<a href="https://www.svgrepo.com/adobexd" target="_blank"><b>Vectors for XD</b></a>, <span>a vector search addon for XD</span></li>
+            <li>Got Funding form 🟥 <a href="https://www.adobe.com/products/xd/adobe-fund.html" target="_blank"><b>Adobe</b></a>, <span>via Adobe Fund for Design</span></li>
+            <li>Made 📐 <a href="https://adobexdfree.com" target="_blank"><b>adobexdfree.com</b></a>, <span>a library of free Adobe Xd templates</span></li>
             <li>Made ‍💨 <a href="https://speedrun.xyz" target="_blank"><b>speedrun.xyz</b></a>, <span>live timeline of record speedruns for games</span></li>
             <li>Helped Release 🏃‍♂️ <a href="https://stratera.co/game/viralfirar" target="_blank"><b>Virar Firar</b></a>, <span>an arcade runner game with ft. 5 influencers</span></li>
             <li>Designed 🔰 <a href="https://stratera.co/" target="_blank"><b>Stratera.co</b></a>, <span>a website for the company</span></li>
@@ -99,9 +104,12 @@ class IndexPage extends React.Component {
             <li>Co-Made 😼 <a href="https://aucyberclub.org" target="_blank"><b>AUCC</b></a>, <span>a website for our university cyber security club</span></li>
             <li>Written 📕 <a href="https://www.kitapyurdu.com/kitap/angularjs/427295.html" target="_blank"><b>AngularJS</b></a>, <span>a published book about front-end in Turkish</span></li>
             <li>Written 📘 <a href="https://www.kitapyurdu.com/kitap/responsive-web-tasarimi-ve-uygulamalari/403949.html&publisher_id=4468" target="_blank"><b>Responsive Design</b></a>, <span>a published book about front-end in Turkish</span></li>
+            <li>Translated 🧠‍ <a href="https://dijitalpsikoloji.com" target="_blank"><b>Dijital Psikoloji</b></a>, <span>a list of digital-related psychological principles in Turkish</span></li>
             <li>Co-Built 👨‍⚕️ <a href="https://www.fitekran.com" target="_blank"><b>Fitekran</b></a>, <span>a popular Turkish health blog</span></li>
             <li>Worked for 🎲 <a href="https://www.otsimo.com" target="_blank"><b>Otsimo</b></a>, <span>building AAC apps</span></li>
             <li>Written 📗 <a href="https://www.dr.com.tr/kitap/html5-css3-ve-javascript-ile-web-tasarimi/burak-tokak/egitim-basvuru/bilgisayar/urunno=0000000672365" target="_blank"><b>HTML5, CSS3 ve Javascript</b></a>, <span>a published book about front-end in Turkish</span></li>
+            <li>Made 🔖 <a href="https://turkcenedemek.com/" target="_blank"><b>turkcenedemek.com</b></a>, <span>a directory of lesser known Turkish words</span></li>
+            <li>Made 💬 <a href="https://www.alintisoz.com/" target="_blank"><b>Alıntı Söz</b></a>, <span>a directory of quotes in Turkish</span></li>
             <li>Made 📖 <a href="https://www.etimolojiturkce.com" target="_blank"><b>Etimoloji Türkçe</b></a>, <span>an etymological dictionary & search engine</span></li>
             <li>Co-built 🎮 <b>metin2sozluk.com</b>, <span>a popular Turkish codex for a mmorpg game</span></li>
           </ul>
