@@ -50,7 +50,7 @@ class IndexPage extends React.Component {
         <SEO title="Burak Tokak" description="Burak's webpage who calls himself an Indie Maker, containing the projects he worked and working on. Click the link to get in touch."/>
         <div style={{marginTop: 100}}>
           <h1>Hi, I'm Burak.</h1>
-          <p style={{fontSize: 19, lineHeight: "1.5em"}}>Burak is an indie {this.state.makerText}, <br/>Trying to make things that makes people's lives better.</p>
+          <p style={{fontSize: 19, lineHeight: "1.5em"}}>Burak is an indie {this.state.makerText}, <br/>Trying to make useful things for everyone.</p>
           <div className="contact" onClick={() => this.revealTopics()}>{this.state.topics && <span>👇 Choose a topic below</span>}{!this.state.topics && <span>💭 Get in touch with me</span>}</div>
           { this.state.topics &&
             <div className="tags" style={{marginTop: 0}}>
@@ -65,26 +65,37 @@ class IndexPage extends React.Component {
         <div className="making">
           <h3>Currently</h3>
           <ul>
-            <li>Working for 🎈 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>making assistive accessibility software</span></li>
+            <li>Working for 💙 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>creating developer tooling software</span></li>
             <li>Working for 🔰 <a href="https://stratera.co/" target="_blank"><b>Stratera Games</b></a>, <span>making fun mobile games</span></li>
+            <li>Working for 🎴 <a href="https://assistivecards.com/" target="_blank"><b>Assistive Cards</b></a>, <span>making assistive accessibility apps/software</span></li>
             <li>Attending 🏫 <b>Software Engineering</b>, <span>master's program at METU</span></li>
-            <li>Making    🧠 <b>Strategy Game</b>, <span>an undisclosed strategy game</span></li>
-            <li>Making    🦙 <b>Huni AI</b>, <span>an AI powered mobile speech therapy app</span></li>
             <li>Coordinating    🦅 <b>Wingo</b>, <span>a daily planner app for kids</span></li>
             <li>Creating  🈳 <b>Anlam</b>, <span>an open source statistical Turkish NLP library in JS</span></li>
             <li>Making    🌌 <b>Beyond Mars</b>, <span>a dice based mobile space exploration game</span></li>
+            <li>Making    🥽 <b>VRID</b>, <span>a virtual reality interface prototying tool</span></li>
           </ul>
         </div>
 
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Featured by 🔵 <a href="https://www.svgrepo.com/adobexd" target="_blank"><b>UNICEF</b></a>, <span>at Covid-19 App catalogue with Leeloo</span></li>
+            <li>Built 📌<a href="https://www.svgrepo.com/adobexd" target="_blank"><b>Vectors for XD</b></a>, <span>a vector search addon for XD</span></li>
+            <li>Helped Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
+            <li>Co-Made 📑 <a href="https://beyazsayfa.org/" target="_blank"><b>Beyaz Sayfa</b></a>, <span>human understandable Turkish cryptocurrency white papers</span></li>
+            <li>Co-Made 🏴‍☠️ <a href="https://stratera.co/game/pirate-factions/" target="_blank"><b>Pirate Factions</b></a>, <span>a text based mobile RPG strategy game</span></li>
+            <li>Helped Make 🧃 <a href="https://stratera.co/game/blokk-defense/" target="_blank"><b>Blokk Defense</b></a>, <span>a casual mobile tower defense game</span></li>
+            <li>Made 🐼 <a href="https://assistivecards.com/chamur" target="_blank"><b>Chamur</b></a>, <span>educational AI scavenger hunt game for kids</span></li>
+            <li>Made 🐙 <a href="https://tenta.me/" target="_blank"><b>Tenta.me</b></a>, <span>an app for sending yourself notifications</span></li>
+            <li>Co-made 🌐 <a href="https://assistivecards.com/" target="_blank"><b>Assistive Cards</b></a>, <span>a library of assistive cards in 37 languages</span></li>
+            <li>Helped Release 🐎 <a href="https://stratera.co/game/ride-to-victory/" target="_blank"><b>Ride to Victory</b></a>, <span>a Battle of Ankara inspired endless 3D runner game</span></li>
+            <li>Made 🦙 <a href="https://assistivecards.com/huni" target="_blank"><b>Huni AI</b></a>, <span>a mobile speech therapy app with voice recognition</span></li>
             <li>Made ‍💨 <a href="https://speedrun.xyz" target="_blank"><b>speedrun.xyz</b></a>, <span>live timeline of record speedruns for games</span></li>
             <li>Helped Release 🏃‍♂️ <a href="https://stratera.co/game/viralfirar" target="_blank"><b>Virar Firar</b></a>, <span>an arcade runner game with ft. 5 influencers</span></li>
             <li>Designed 🔰 <a href="https://stratera.co/" target="_blank"><b>Stratera.co</b></a>, <span>a website for the company</span></li>
             <li>Re-Made 🦜 <a href="https://apps.apple.com/us/app/id1517824465" target="_blank"><b>Wordmoji</b></a>, <span>a new version of Wordmoji on ios</span></li>
             <li>Co-Made 🐰 <a href="https://apps.apple.com/us/app/leeloo-aac-autism-speech-app/id1508952198" target="_blank"><b>Leeloo AAC</b></a>, <span>a new version of Leeloo on ios</span></li>
-            <li>Founded 🔵 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>a website for the company</span></li>
+            <li>Founded 🎈 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>a website for the company</span></li>
             <li>Written 📓 <a href="https://play.google.com/store/books/details?id=EL7tDwAAQBAJ" target="_blank"><b>React ile Uygulama Geliştirme</b></a>, <span>a tutorial ebook in Turkish</span></li>
             <li>Made    💾 <a href="https://svgapi.com/" target="_blank"><b>svgapi</b></a>, <span>a saas Rest API to list and search SVG icons</span></li>
             <li>Shipped 📝 <a href="https://usememo.com/" target="_blank"><b>Memo</b></a>, <span>a smart note taking app using GH Gists</span></li>
