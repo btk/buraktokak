@@ -66,21 +66,24 @@ class IndexPage extends React.Component {
           <h3>Currently</h3>
           <ul>
             <li>Working for 💙 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>creating developer tooling software</span></li>
-            <li>Working for 🔰 <a href="https://stratera.co/" target="_blank"><b>Stratera Games</b></a>, <span>making fun mobile games</span></li>
+            <li>Working for 🔰 <a href="https://stratera.co/" target="_blank"><b>Stratera Games</b></a>, <span>making fun indie games</span></li>
             <li>Working for 🎴 <a href="https://assistivecards.com/" target="_blank"><b>Assistive Cards</b></a>, <span>making assistive accessibility apps/software</span></li>
             <li>Attending 🏫 <b>Software Engineering</b>, <span>master's program at METU</span></li>
-            <li>Coordinating    🦅 <b>Wingo</b>, <span>a daily planner app for kids</span></li>
+            <li>Making    🗒️ <a href="https://uncontent.co/" target="_blank"><b>uncontent.co</b></a>, <span>an AI companion for your content marketing</span></li>
+            <li>Making    🥽 <a href="https://vrux.co/" target="_blank"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
+            <li>Making    🔗 <a href="https://iconlist.co/" target="_blank"><b>iconlist.co</b></a>, <span>a tool to manage your project icons, discover new ones</span></li>
+            <li>Making    🗣️ <a href="https://uncopy.co/" target="_blank"><b>uncopy.co</b></a>, <span>an AI companion for copywriting</span></li>
+            <li>Helping Make  🦅 <b>Wingo</b>, <span>a daily planner app for kids</span></li>
             <li>Creating  🈳 <b>Anlam</b>, <span>an open source statistical Turkish NLP library in JS</span></li>
             <li>Making    🌌 <b>Beyond Mars</b>, <span>a dice based mobile space exploration game</span></li>
-            <li>Making    🥽 <b>VRID</b>, <span>a virtual reality interface prototying tool</span></li>
           </ul>
         </div>
 
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Accelerated by 🕵️ <a href="https://startupwiseguys.com/" target="_blank"><b>Startup Wise Guys</b></a>, <span>a European startup accelerator (via ODTU SpeedUp)</span></li>
             <li>Featured by 🔵 <a href="https://www.svgrepo.com/adobexd" target="_blank"><b>UNICEF</b></a>, <span>at Covid-19 App catalogue with Leeloo</span></li>
-            <li>Built 📌<a href="https://www.svgrepo.com/adobexd" target="_blank"><b>Vectors for XD</b></a>, <span>a vector search addon for XD</span></li>
             <li>Helped Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
             <li>Co-Made 📑 <a href="https://beyazsayfa.org/" target="_blank"><b>Beyaz Sayfa</b></a>, <span>human understandable Turkish cryptocurrency white papers</span></li>
             <li>Co-Made 🏴‍☠️ <a href="https://stratera.co/game/pirate-factions/" target="_blank"><b>Pirate Factions</b></a>, <span>a text based mobile RPG strategy game</span></li>
@@ -99,8 +102,9 @@ class IndexPage extends React.Component {
             <li>Written 📓 <a href="https://play.google.com/store/books/details?id=EL7tDwAAQBAJ" target="_blank"><b>React ile Uygulama Geliştirme</b></a>, <span>a tutorial ebook in Turkish</span></li>
             <li>Made    💾 <a href="https://svgapi.com/" target="_blank"><b>svgapi</b></a>, <span>a saas Rest API to list and search SVG icons</span></li>
             <li>Shipped 📝 <a href="https://usememo.com/" target="_blank"><b>Memo</b></a>, <span>a smart note taking app using GH Gists</span></li>
+            <li>Localized 📡 <a href="https://dijitalpsikoloji.com/" target="_blank"><b>Dijital Psikoloji</b></a>, <span>a list of principals of digital product design in Turkish</span></li>
             <li>Helped 👾 <a href="https://apps.apple.com/us/app/mola-arcade-space-shooter/id1493319285" target="_blank"><b>Mola</b></a>, <span>a mobile arcade space shooter game</span></li>
-            <li>Maintained 💊 <a href="https://drcanciftci.com/" target="_blank"><b>Dr. Can Supplementleri</b></a>, <span>an e-commerce website</span></li>
+            <li>Co-Founded 💊 <a href="https://drcanciftci.com/" target="_blank"><b>Dr. Can Supplementleri</b></a>, <span>a medical e-commerce website</span></li>
             <li>Made 🤔 <a href="https://www.dreamoriented.org/wordmoji/" target="_blank"><b>Wordmoji</b></a>, <span>a casual mobile emoji quiz game</span></li>
             <li>Made 🤞 <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.leeloo" target="_blank"><b>Leeloo AAC</b></a>, <span>a simple open source multilangulal mobile AAC app</span></li>
             <li>Made 🖼️ <a href="https://www.pngrepo.com/" target="_blank"><b>PNG Repo</b></a>, <span>a png clipart library, like svgrepo</span></li>
@@ -114,7 +118,7 @@ class IndexPage extends React.Component {
             <li>Worked for 🎲 <a href="https://www.otsimo.com" target="_blank"><b>Otsimo</b></a>, <span>building AAC apps</span></li>
             <li>Written 📗 <a href="https://www.dr.com.tr/kitap/html5-css3-ve-javascript-ile-web-tasarimi/burak-tokak/egitim-basvuru/bilgisayar/urunno=0000000672365" target="_blank"><b>HTML5, CSS3 ve Javascript</b></a>, <span>a published book about front-end in Turkish</span></li>
             <li>Made 📖 <a href="https://www.etimolojiturkce.com" target="_blank"><b>Etimoloji Türkçe</b></a>, <span>an etymological dictionary & search engine</span></li>
-            <li>Co-built 🎮 <b>metin2sozluk.com</b>, <span>a popular Turkish codex for a mmorpg game</span></li>
+            <li>Co-built 🎮 <b>metin2sozluk.com</b>, <span>a popular Turkish codex for an mmorpg game</span></li>
           </ul>
         </div>
 
