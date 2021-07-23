@@ -76,6 +76,7 @@ class IndexPage extends React.Component {
             <li>Helping Make  🦅 <b>Wingo</b>, <span>a daily planner app for kids</span></li>
             <li>Creating  🈳 <b>Anlam</b>, <span>an open source statistical Turkish NLP library in JS</span></li>
             <li>Making    🌌 <b>Beyond Mars</b>, <span>a dice based mobile space exploration game</span></li>
+            <li>Helping Make 🧩 <b>2D Puzzle Game</b>, <span>an undisclosed PC puzzle game</span></li>
           </ul>
         </div>
 
@@ -83,14 +84,14 @@ class IndexPage extends React.Component {
           <h3>Past</h3>
           <ul>
             <li>Accelerated by 🕵️ <a href="https://startupwiseguys.com/" target="_blank"><b>Startup Wise Guys</b></a>, <span>a European startup accelerator (via ODTU SpeedUp)</span></li>
-            <li>Featured by 🔵 <a href="https://www.svgrepo.com/adobexd" target="_blank"><b>UNICEF</b></a>, <span>at Covid-19 App catalogue with Leeloo</span></li>
+            <li>Featured by 🌐 <a href="https://www.svgrepo.com/adobexd" target="_blank"><b>UNICEF</b></a>, <span>at Covid-19 App catalogue with Leeloo</span></li>
             <li>Helped Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
             <li>Co-Made 📑 <a href="https://beyazsayfa.org/" target="_blank"><b>Beyaz Sayfa</b></a>, <span>human understandable Turkish cryptocurrency white papers</span></li>
             <li>Co-Made 🏴‍☠️ <a href="https://stratera.co/game/pirate-factions/" target="_blank"><b>Pirate Factions</b></a>, <span>a text based mobile RPG strategy game</span></li>
             <li>Helped Make 🧃 <a href="https://stratera.co/game/blokk-defense/" target="_blank"><b>Blokk Defense</b></a>, <span>a casual mobile tower defense game</span></li>
             <li>Made 🐼 <a href="https://assistivecards.com/chamur" target="_blank"><b>Chamur</b></a>, <span>educational AI scavenger hunt game for kids</span></li>
             <li>Made 🐙 <a href="https://tenta.me/" target="_blank"><b>Tenta.me</b></a>, <span>an app for sending yourself notifications</span></li>
-            <li>Co-made 🌐 <a href="https://assistivecards.com/" target="_blank"><b>Assistive Cards</b></a>, <span>a library of assistive cards in 37 languages</span></li>
+            <li>Co-made 🃏 <a href="https://assistivecards.com/" target="_blank"><b>Assistive Cards</b></a>, <span>a library of assistive cards in 37 languages</span></li>
             <li>Helped Release 🐎 <a href="https://stratera.co/game/ride-to-victory/" target="_blank"><b>Ride to Victory</b></a>, <span>a Battle of Ankara inspired endless 3D runner game</span></li>
             <li>Made 🦙 <a href="https://assistivecards.com/huni" target="_blank"><b>Huni AI</b></a>, <span>a mobile speech therapy app with voice recognition</span></li>
             <li>Made ‍💨 <a href="https://speedrun.xyz" target="_blank"><b>speedrun.xyz</b></a>, <span>live timeline of record speedruns for games</span></li>
