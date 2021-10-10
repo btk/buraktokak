@@ -76,7 +76,8 @@ class IndexPage extends React.Component {
             <li>Helping Make  🦅 <b>Wingo</b>, <span>a daily planner app for kids</span></li>
             <li>Creating  🈳 <b>Anlam</b>, <span>an open source statistical Turkish NLP library in JS</span></li>
             <li>Making    🌌 <b>Beyond Mars</b>, <span>a dice based mobile space exploration game</span></li>
-            <li>Helping Make 🧩 <b>2D Puzzle Game</b>, <span>an undisclosed PC puzzle game</span></li>
+            <li>Helping Make 🧩 <b>Havsala</b>, <span>a 2d PC puzzle game on Steam</span></li>
+            <li>Co-Making 🌊 <b>Lighthouse Keeper</b>, <span>a simulation/survival chill pc game on Steam</span></li>
           </ul>
         </div>
 
@@ -91,7 +92,7 @@ class IndexPage extends React.Component {
             <li>Helped Make 🧃 <a href="https://stratera.co/game/blokk-defense/" target="_blank"><b>Blokk Defense</b></a>, <span>a casual mobile tower defense game</span></li>
             <li>Made 🐼 <a href="https://assistivecards.com/chamur" target="_blank"><b>Chamur</b></a>, <span>educational AI scavenger hunt game for kids</span></li>
             <li>Made 🐙 <a href="https://tenta.me/" target="_blank"><b>Tenta.me</b></a>, <span>an app for sending yourself notifications</span></li>
-            <li>Co-made 🃏 <a href="https://assistivecards.com/" target="_blank"><b>Assistive Cards</b></a>, <span>a library of assistive cards in 37 languages</span></li>
+            <li>Co-made 🃏 <a href="https://assistivecards.com/" target="_blank"><b>Assistive Cards Listing</b></a>, <span>a library of assistive cards in 37 languages</span></li>
             <li>Helped Release 🐎 <a href="https://stratera.co/game/ride-to-victory/" target="_blank"><b>Ride to Victory</b></a>, <span>a Battle of Ankara inspired endless 3D runner game</span></li>
             <li>Made 🦙 <a href="https://assistivecards.com/huni" target="_blank"><b>Huni AI</b></a>, <span>a mobile speech therapy app with voice recognition</span></li>
             <li>Made ‍💨 <a href="https://speedrun.xyz" target="_blank"><b>speedrun.xyz</b></a>, <span>live timeline of record speedruns for games</span></li>
