@@ -58,6 +58,13 @@
   background: #fafafa;
 }
 
+img {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
 
 @media only screen and (max-width: 640px) {
   .making li span, .made li span {

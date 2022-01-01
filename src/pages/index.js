@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Twemoji from 'react-twemoji';
 
 import './index.css'
 
@@ -62,6 +63,8 @@ class IndexPage extends React.Component {
             </div>
           }
         </div>
+        <Twemoji options={{ className: 'twemoji' }}>
+
         <div className="making">
           <h3>Currently</h3>
           <ul>
@@ -82,7 +85,9 @@ class IndexPage extends React.Component {
             <li>Helping Make  🦅 <a href="https://assistivecards.com/wingo" target="_blank"><b>Wingo</b></a>, <span>a daily planner app for kids</span></li>
           </ul>
         </div>
+        </Twemoji>
 
+        <Twemoji options={{ className: 'twemoji' }}>
         <div className="made">
           <h3>Past</h3>
           <ul>
@@ -125,11 +130,11 @@ class IndexPage extends React.Component {
             <li>Co-built 🎮 <b>metin2sozluk.com</b>, <span>a popular Turkish codex for an mmorpg game</span></li>
           </ul>
         </div>
+        </Twemoji>
 
         <div className="tags">
           <h4>Topics I'm passionate about</h4>
           <div>
-          <span>vr</span>
             <span>virtual reality</span>
             <span>accessibility</span>
             <span>natural language processing</span>
