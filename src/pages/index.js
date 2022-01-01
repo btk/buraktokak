@@ -72,13 +72,14 @@ class IndexPage extends React.Component {
             <li>Making    🗒️ <a href="https://uncontent.co/" target="_blank"><b>uncontent.co</b></a>, <span>an AI companion for your content marketing</span></li>
             <li>Making    🥽 <a href="https://vrux.co/" target="_blank"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
             <li>Making    🔗 <a href="https://iconlist.co/" target="_blank"><b>iconlist.co</b></a>, <span>a tool to manage your project icons, discover new ones</span></li>
-            <li>Making    🗣️ <a href="https://uncopy.co/" target="_blank"><b>uncopy.co</b></a>, <span>an AI companion for copywriting</span></li>
-            <li>Helping Make  🦅 <b>Wingo</b>, <span>a daily planner app for kids</span></li>
+            <li style={{display: "none"}}>Making    🗣️ <a href="https://uncopy.co/" target="_blank"><b>uncopy.co</b></a>, <span>an AI companion for copywriting</span></li>
             <li>Creating  🈳 <b>Anlam</b>, <span>an open source statistical Turkish NLP library in JS</span></li>
             <li>Making    🌌 <b>Beyond Mars</b>, <span>a dice based mobile space exploration game</span></li>
-            <li>Helping Make 🧩 <b>Havsala</b>, <span>a 2D PC puzzle game on Steam</span></li>
-            <li>Co-Making 🌊 <b>Lighthouse Keeper</b>, <span>a simulation/survival chill pc game on Steam</span></li>
+            <li>Co-Making 🌊 <b>Lighthouse Keeper</b>, <span>a simulation/survival chill PC game on Steam</span></li>
+            <li>Helping Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
+            <li>Helping Make 🧩 <a href="https://store.steampowered.com/app/1732750/Havsala_Into_the_Soul_Palace/" target="_blank"><b>Havsala</b></a>, <span>a 2D PC puzzle game on Steam</span></li>
             <li>Helping Make 🧁 <b>Cupcat Town</b>, <span>an NFT's gacha style mobile game</span></li>
+            <li>Helping Make  🦅 <a href="https://assistivecards.com/wingo" target="_blank"><b>Wingo</b></a>, <span>a daily planner app for kids</span></li>
           </ul>
         </div>
 
@@ -86,8 +87,7 @@ class IndexPage extends React.Component {
           <h3>Past</h3>
           <ul>
             <li>Accelerated by 🕵️ <a href="https://startupwiseguys.com/" target="_blank"><b>Startup Wise Guys</b></a>, <span>a European startup accelerator (via ODTU SpeedUp)</span></li>
-            <li>Featured by 🌐 <a href="https://www.unicef.org/appcatalogue/" target="_blank"><b>UNICEF</b></a>, <span>at Covid-19 App catalogue with Leeloo</span></li>
-            <li>Helped Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
+            <li>Featured by 🌐 <a href="https://www.unicef.org/appcatalogue/" target="_blank"><b>UNICEF</b></a>, <span>at their App catalogue with Leeloo</span></li>
             <li>Made 🪶 <a href="https://personalitylist.com/" target="_blank"><b>Personality List</b></a>, <span>an AI text generation experiment with character personalities</span></li>
             <li>Co-Made 📑 <a href="https://beyazsayfa.org/" target="_blank"><b>Beyaz Sayfa</b></a>, <span>human understandable Turkish cryptocurrency white papers</span></li>
             <li>Co-Made 🏴‍☠️ <a href="https://stratera.co/game/pirate-factions/" target="_blank"><b>Pirate Factions</b></a>, <span>a text based mobile RPG strategy game</span></li>
@@ -129,8 +129,9 @@ class IndexPage extends React.Component {
         <div className="tags">
           <h4>Topics I'm passionate about</h4>
           <div>
-            <span>user experience</span>
-            <span>accessibility & disability</span>
+          <span>vr</span>
+            <span>virtual reality</span>
+            <span>accessibility</span>
             <span>natural language processing</span>
             <span>static web & serverless</span>
           </div>
