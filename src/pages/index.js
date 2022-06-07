@@ -82,6 +82,7 @@ class IndexPage extends React.Component {
             <li>Helping Make  🦅 <a href="https://assistivecards.com/wingo" target="_blank"><b>Wingo</b></a>, <span>a daily planner app for kids</span></li>
             <li>Making 🌳 <a href="https://carbonneutralwebsite.com/" target="_blank"><b>Carbon Neutral Website</b></a>, <span>a tool for offseting website's carbon footprint</span></li>
             <li>Making 🎨 <a href="https://www.svgrepo.com/svg/97560/tomato-juice#edit" target="_blank"><b>SVG Repo Editor</b></a>, <span>a tool with internal SVG vector editor in NextJS</span></li>
+            <li>Making 🎛️ <a href="https://vectormixer.com/" target="_blank"><b>Vector Mixer</b></a>, <span>a tool to remix and create unique vectors</span></li>
           </ul>
         </div>
         </Twemoji>
