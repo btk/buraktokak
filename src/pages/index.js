@@ -92,7 +92,7 @@ class IndexPage extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
-            <li>Co-Made 🌊 <b>Lighthouse Keeper</b>, <span>a simulation/survival chill PC game on Steam</span></li>
+            <li>Project Lead 🌊 <a href="https://store.steampowered.com/app/2023050/Lighthouse_Keeper/" target="_blank"><b>Lighthouse Keeper</b></a>, <span>a simulation/survival chill PC game on Steam</span></li>
             <li>Helped Release 🧩 <a href="https://store.steampowered.com/app/1732750/Havsala_Into_the_Soul_Palace/" target="_blank"><b>Havsala</b></a>, <span>a 2D PC puzzle game on Steam</span></li>
             <li>Helped Make 🧁 <a href="https://stratera.co/game/cupcats/" target="_blank"><b>Cats in the Cups</b></a>, <span>an NFT set's gacha style mobile game</span></li>
             <li>Accelerated by 🕵️ <a href="https://startupwiseguys.com/" target="_blank"><b>Startup Wise Guys</b></a>, <span>a European startup accelerator (via ODTU SpeedUp)</span></li>
