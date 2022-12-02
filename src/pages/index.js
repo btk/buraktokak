@@ -92,6 +92,7 @@ class IndexPage extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Made ⚙️ <a href="https://text2icon.app/" target="_blank"><b>text2icon</b></a>, <span>a stable diffusion based vector icon generator</span></li>
             <li>Made ✒️ <a href="https://vectormaker.co/" target="_blank"><b>vectormaker</b></a>, <span>a multicolor raster image vectorizer tool</span></li>
             <li>Helped Make  🦅 <a href="https://assistivecards.com/wingo" target="_blank"><b>Wingo</b></a>, <span>a daily planner app for kids</span></li>
             <li>Project Lead 🌊 <a href="https://store.steampowered.com/app/2023050/Lighthouse_Keeper/" target="_blank"><b>Lighthouse Keeper</b></a>, <span>a simulation/survival chill PC game on Steam</span></li>
