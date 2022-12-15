@@ -197,7 +197,7 @@ class IndexPage extends React.Component {
                 return (
                   <a href={song.track.uri} key={i}>
                     <div>
-                      <img src={song.track.album.images[2].url} style={{width: 58, height: 58, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <img src={song.track.album.images[2].url} style={{width: 54, height: 54, float: "left", borderRadius: 5, marginRight: 10}}/>
                       <small style={{textTransform: "uppercase"}}>{song.track.album.name}</small>
                       <p>{song.track.artists[0].name} - {song.track.name}</p>
                     </div>
