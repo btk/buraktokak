@@ -13,6 +13,19 @@ class IndexPage extends React.Component {
     topics: false
   }
 
+  getSongs(){
+    fetch("https://api.spotify.com/v1/me/player/recently-played?limit=3", {
+      headers: {
+        Accept: "application/json",
+        Authorization: "Bearer BQBn5MT69yjzDnJfItNmChFlgq6yMRojglhzqev3n02cEVsRj-T_tXl-o_Lg-oR3y3lxTm8y4YrAc2BrytNyMBF2QkWfRM7EYxVi7ilglMOuq99-bJ1QZ5gf6fBuvq-2hCDbkspQY1huPRh0qEyWpHwLIyi4DnN31RwIgyIiqU4-2WV_iiDk",
+        "Content-Type": "application/json"
+      }
+    }).then(res => res.json()).then(res => {
+      this.setState({songs: res.items})
+      console.log(res.items);
+    });
+  }
+
   makerTextGlitch(){
     let textArray = [
       "ha%wr",
@@ -36,9 +49,10 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount(){
-      setInterval(() => {
-        this.makerTextGlitch();
-      }, 5000);
+    setInterval(() => {
+      this.makerTextGlitch();
+    }, 5000);
+    this.getSongs();
   }
 
   revealTopics(){
@@ -74,14 +88,11 @@ class IndexPage extends React.Component {
             <li>Attending 🏫 <b>Software Engineering</b>, <span>master's program at METU</span></li>
             <li>Making    🧧️ <a href="https://uncontent.co/" target="_blank"><b>uncontent.co</b></a>, <span>an AI companion for your content marketing</span></li>
             <li>Making    🥽 <a href="https://vrux.co/" target="_blank"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
-            <li>Making    🔗 <a href="https://iconlist.co/" target="_blank"><b>iconlist.co</b></a>, <span>a tool to manage your project icons, discover new ones</span></li>
-            <li style={{display: "none"}}>Making    🗣️ <a href="https://uncopy.co/" target="_blank"><b>uncopy.co</b></a>, <span>an AI companion for copywriting</span></li>
             <li>Helping Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
+            <li>Making 🐳 <a href="https://www.svgrepo.com/" target="_blank"><b>SVG Repo v2</b></a>, <span>a 2nd version of SVG Repo with competition equal functionality</span></li>
             <li>Making 🌳 <a href="https://carbonneutralwebsite.org/" target="_blank"><b>Carbon Neutral Website</b></a>, <span>a tool for offseting website's carbon footprint</span></li>
-            <li>Making 🎨 <a href="https://www.svgrepo.com/svg/97560/tomato-juice#edit" target="_blank"><b>SVG Repo Editor</b></a>, <span>a tool with internal SVG vector editor in NextJS</span></li>
-            <li>Making 🎛️ <a href="https://vectormixer.com/" target="_blank"><b>Vector Mixer</b></a>, <span>a tool to remix and create unique vectors</span></li>
-            <li>Making 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find original SVG vectors</span></li>
             <li>Leading 🕹 <a href="https://assistivecards.com/games" target="_blank"><b>Assistive Cards Games</b></a>, <span>educational assistive mobile games</span></li>
+            <li>Making 🎨 <a href="https://www.svgrepo.com/svg/97560/tomato-juice#edit" target="_blank"><b>SVG Repo Editor</b></a>, <span>a tool with internal SVG vector editor in NextJS</span></li>
             <li>Helping Make 🏙 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Cardboard Town</b></a>, <span>a PC city building card game</span></li>
             <li>Helping Make ‍🚀 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Untitled Game</b></a>, <span>a PC tower defense / resource management game</span></li>
           </ul>
@@ -92,6 +103,7 @@ class IndexPage extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Helped Release 🐇 <a href="https://store.steampowered.com/app/2113120/Verlet_Ascend/" target="_blank"><b>Verlet Ascend</b></a>, <span>a physics based platformer on Steam</span></li>
             <li>Made ⚙️ <a href="https://text2icon.app/" target="_blank"><b>text2icon</b></a>, <span>a stable diffusion based vector icon generator</span></li>
             <li>Made ✒️ <a href="https://vectormaker.co/" target="_blank"><b>vectormaker</b></a>, <span>a multicolor raster image vectorizer tool</span></li>
             <li>Helped Make  🦅 <a href="https://assistivecards.com/wingo" target="_blank"><b>Wingo</b></a>, <span>a daily planner app for kids</span></li>
@@ -141,15 +153,60 @@ class IndexPage extends React.Component {
         </div>
         </Twemoji>
 
+        <Twemoji options={{ className: 'twemoji' }}>
+        <div className="made" style={{display: "none"}}>
+          <h3>Future</h3>
+          <ul>
+            <li>Will be Making 🔗 <a href="https://iconlist.co/" target="_blank"><b>iconlist.co</b></a>, <span>a tool to manage your project icons, discover new ones</span></li>
+            <li>Will be Making 🎛️ <a href="https://vectormixer.com/" target="_blank"><b>Vector Mixer</b></a>, <span>a tool to remix and create unique vectors</span></li>
+            <li>Will be Making 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find original SVG vectors</span></li>
+            <li>Will be Making    🗣️ <a href="https://uncopy.co/" target="_blank"><b>uncopy.co</b></a>, <span>an AI companion for copywriting</span></li>
+            <li>Will be Creating 👩🏼‍🎨 <a href="https://opendesign.fyi/" target="_blank"><b>OpenDesign.FYI</b></a>, <span>a license menifesto for open design</span></li>
+            <li>Will be Creating 🤔 <a href="https://creativecommons.info/" target="_blank"><b>Creative Commons Info</b></a>, <span>a non-corporate license alternative for CC</span></li>
+            <li>Will be Making 🤘 <a href="https://metalmap.net/" target="_blank"><b>MetalMap</b></a>, <span>a map with popular/new released metal albums by band origin</span></li>
+            <li>Will be Making 📦 <a href="https://fbxrepo.com/" target="_blank"><b>FBXRepo</b></a>, <span>a repository of open licensed FBX models</span></li>
+            <li>Will be Compiling 👨‍💼 <a href="https://founderlist.org/" target="_blank"><b>Founderlist</b></a>, <span>a list of actionable tasks for bootstrappers</span></li>
+            <li>Will be Making 🧢 <a href="https://howoldwhen.com/" target="_blank"><b>How Old When?</b></a>, <span>a list for how old was that celeb during a movie/album</span></li>
+            <li>Will be Making 🎨 <a href="https://illustrationfree.com/" target="_blank"><b>Illustration Free</b></a>, <span>a repository of open licensed Illustrations</span></li>
+            <li>Will be Making 👓 <a href="https://landingapi.com/" target="_blank"><b>Landing API</b></a>, <span>an API for your landing page (undisclosed SaaS)</span></li>
+            <li>Will be Making 📜 <a href="https://makerhow.com/" target="_blank"><b>Makerhow</b></a>, <span>a long form tutorial on making fast/eff products</span></li>
+            <li>Will be Making ❄️ <a href="https://unlogo.co/" target="_blank"><b>unlogo.co</b></a>, <span>a stable diffusion based general-purpose logo maker</span></li>
+          </ul>
+        </div>
+        </Twemoji>
+
+
         <div className="tags">
           <h4>Topics I'm passionate about</h4>
           <div>
-            <span>virtual reality</span>
+            <span>nlp</span>
             <span>accessibility</span>
-            <span>natural language processing</span>
+            <span>virtual reality</span>
+            <span>deep learning</span>
+            <span>dev experience</span>
             <span>static web & serverless</span>
           </div>
         </div>
+
+
+        {this.state.songs && this.state.songs.length != 0 &&
+          <div className="music">
+            <h4>Last listened songs</h4>
+            <div>
+              {this.state.songs.map((song, i) => {
+                return (
+                  <a href={song.track.uri} key={i}>
+                    <div>
+                      <img src={song.track.album.images[2].url} style={{width: 58, height: 58, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <small style={{textTransform: "uppercase"}}>{song.track.album.name}</small>
+                      <p>{song.track.artists[0].name} - {song.track.name}</p>
+                    </div>
+                  </a>
+                )
+              })}
+            </div>
+          </div>
+        }
       </Layout>
     )
   }

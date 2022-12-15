@@ -65,6 +65,11 @@ img {
    vertical-align: -0.1em;
 }
 
+.music {
+  margin: 20px 0px;
+  padding-top: 30px;
+}
+
 
 @media only screen and (max-width: 640px) {
   .making li span, .made li span {
