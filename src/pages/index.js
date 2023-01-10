@@ -14,15 +14,9 @@ class IndexPage extends React.Component {
   }
 
   getSongs(){
-    fetch("https://api.spotify.com/v1/me/player/recently-played?limit=3", {
-      headers: {
-        Accept: "application/json",
-        Authorization: "Bearer BQBn5MT69yjzDnJfItNmChFlgq6yMRojglhzqev3n02cEVsRj-T_tXl-o_Lg-oR3y3lxTm8y4YrAc2BrytNyMBF2QkWfRM7EYxVi7ilglMOuq99-bJ1QZ5gf6fBuvq-2hCDbkspQY1huPRh0qEyWpHwLIyi4DnN31RwIgyIiqU4-2WV_iiDk",
-        "Content-Type": "application/json"
-      }
-    }).then(res => res.json()).then(res => {
-      this.setState({songs: res.items})
-      console.log(res.items);
+    fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=buraktokak&api_key=0387dfbf62ee3f6f7fc0d9ea9c12d989&limit=5&format=json").then(res => res.json()).then(res => {
+      this.setState({songs: res.recenttracks.track})
+      console.log(res.recenttracks.track);
     });
   }
 
@@ -77,7 +71,7 @@ class IndexPage extends React.Component {
             </div>
           }
         </div>
-        <Twemoji options={{ className: 'twemoji' }}>
+        <Twemoji options={{ className: 'twemoji', base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' }}>
 
         <div className="making">
           <h3>Currently</h3>
@@ -99,7 +93,7 @@ class IndexPage extends React.Component {
         </div>
         </Twemoji>
 
-        <Twemoji options={{ className: 'twemoji' }}>
+        <Twemoji options={{ className: 'twemoji', base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' }}>
         <div className="made">
           <h3>Past</h3>
           <ul>
@@ -153,7 +147,7 @@ class IndexPage extends React.Component {
         </div>
         </Twemoji>
 
-        <Twemoji options={{ className: 'twemoji' }}>
+        <Twemoji options={{ className: 'twemoji', base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' }}>
         <div className="made" style={{display: "none"}}>
           <h3>Future</h3>
           <ul>
@@ -191,15 +185,17 @@ class IndexPage extends React.Component {
 
         {this.state.songs && this.state.songs.length != 0 &&
           <div className="music">
-            <h4>Last listened songs</h4>
+            <h4>Last listened</h4>
             <div>
               {this.state.songs.map((song, i) => {
                 return (
-                  <a href={song.track.uri} key={i}>
-                    <div>
-                      <img src={song.track.album.images[2].url} style={{width: 54, height: 54, float: "left", borderRadius: 5, marginRight: 10}}/>
-                      <small style={{textTransform: "uppercase"}}>{song.track.album.name}</small>
-                      <p>{song.track.artists[0].name} - {song.track.name}</p>
+                  <a href={song.url} key={i} target="_blank">
+                    <div className="song">
+                      <img src={song.image[2]["#text"]} style={{width: 54, height: 54, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <div>
+                        <small style={{textTransform: "uppercase"}}>{song.album["#text"]}</small>
+                        <p>{song.artist["#text"]} - {song.name}</p>
+                      </div>
                     </div>
                   </a>
                 )
