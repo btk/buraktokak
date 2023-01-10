@@ -83,10 +83,8 @@ class IndexPage extends React.Component {
             <li>Making    🧧️ <a href="https://uncontent.co/" target="_blank"><b>uncontent.co</b></a>, <span>an AI companion for your content marketing</span></li>
             <li>Making    🥽 <a href="https://vrux.co/" target="_blank"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
             <li>Helping Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
-            <li>Making 🐳 <a href="https://www.svgrepo.com/" target="_blank"><b>SVG Repo v2</b></a>, <span>a 2nd version of SVG Repo with competition equal functionality</span></li>
-            <li>Making 🌳 <a href="https://carbonneutralwebsite.org/" target="_blank"><b>Carbon Neutral Website</b></a>, <span>a tool for offseting website's carbon footprint</span></li>
+            <li>Making 🎛️ <a href="https://vectormixer.com/" target="_blank"><b>Vector Mixer</b></a>, <span>a tool to remix and create unique svg vectors</span></li>
             <li>Leading 🕹 <a href="https://assistivecards.com/games" target="_blank"><b>Assistive Cards Games</b></a>, <span>educational assistive mobile games</span></li>
-            <li>Making 🎨 <a href="https://www.svgrepo.com/svg/97560/tomato-juice#edit" target="_blank"><b>SVG Repo Editor</b></a>, <span>a tool with internal SVG vector editor in NextJS</span></li>
             <li>Helping Make 🏙 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Cardboard Town</b></a>, <span>a PC city building card game</span></li>
             <li>Helping Make ‍🚀 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Untitled Game</b></a>, <span>a PC tower defense / resource management game</span></li>
           </ul>
@@ -97,6 +95,9 @@ class IndexPage extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Making 🎨 <a href="https://www.svgrepo.com/svg/97560/tomato-juice#edit" target="_blank"><b>SVG Repo Editor</b></a>, <span>a tool with internal SVG vector editor in NextJS</span></li>
+            <li>Making 🐳 <a href="https://www.svgrepo.com/" target="_blank"><b>SVG Repo V2</b></a>, <span>a 2nd version of SVG Repo with competition equal functionality</span></li>
+            <li>Making 🌳 <a href="https://carbonneutralwebsite.org/" target="_blank"><b>Carbon Neutral Website</b></a>, <span>a tool for offseting website's carbon footprint</span></li>
             <li>Helped Release 🐇 <a href="https://store.steampowered.com/app/2113120/Verlet_Ascend/" target="_blank"><b>Verlet Ascend</b></a>, <span>a physics based platformer on Steam</span></li>
             <li>Made ⚙️ <a href="https://text2icon.app/" target="_blank"><b>text2icon</b></a>, <span>a stable diffusion based vector icon generator</span></li>
             <li>Made ✒️ <a href="https://vectormaker.co/" target="_blank"><b>vectormaker</b></a>, <span>a multicolor raster image vectorizer tool</span></li>
@@ -152,7 +153,6 @@ class IndexPage extends React.Component {
           <h3>Future</h3>
           <ul>
             <li>Will be Making 🔗 <a href="https://iconlist.co/" target="_blank"><b>iconlist.co</b></a>, <span>a tool to manage your project icons, discover new ones</span></li>
-            <li>Will be Making 🎛️ <a href="https://vectormixer.com/" target="_blank"><b>Vector Mixer</b></a>, <span>a tool to remix and create unique vectors</span></li>
             <li>Will be Making 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find original SVG vectors</span></li>
             <li>Will be Making    🗣️ <a href="https://uncopy.co/" target="_blank"><b>uncopy.co</b></a>, <span>an AI companion for copywriting</span></li>
             <li>Will be Creating 👩🏼‍🎨 <a href="https://opendesign.fyi/" target="_blank"><b>OpenDesign.FYI</b></a>, <span>a license menifesto for open design</span></li>
