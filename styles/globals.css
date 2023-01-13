@@ -681,17 +681,17 @@ img {
    vertical-align: -0.1em;
 }
 
-.music {
+.lists {
   margin: 20px 0px;
   padding-top: 30px;
   min-height: 470px;
 }
 
-.music > div > a {
+.lists > div > a {
   display: flex;
 }
 
-.song {
+.listItem {
   border-radius: 8px;
   min-height: 65px;
   padding: 8px;
@@ -702,17 +702,18 @@ img {
   transition: 400ms all;
   display: flex;
   flex-direction: row;
+  max-width: 600px;
 }
 
-.song img {
+.listItem img {
   display: block;
 }
 
-.song p {
+.listItem p {
   margin-bottom: 0px;
 }
 
-.music a:hover .song {
+.lists a:hover .listItem {
   background: #f3f3f3;
 }
 

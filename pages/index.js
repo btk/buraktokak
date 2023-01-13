@@ -12,8 +12,14 @@ export default class Home extends React.Component {
   }
 
   getSongs(){
-    fetch("/api/listened").then(res => res.json()).then(res => {
+    fetch("/api/listen").then(res => res.json()).then(res => {
       this.setState({songs: res.recenttracks.track})
+    });
+  }
+
+  getBooks(){
+    fetch("/api/read").then(res => res.json()).then(res => {
+      this.setState({to_read: res.to_read, read:res.read})
     });
   }
 
@@ -44,6 +50,7 @@ export default class Home extends React.Component {
       this.makerTextGlitch();
     }, 5000);
     this.getSongs();
+    this.getBooks();
   }
 
   revealTopics(){
@@ -184,17 +191,61 @@ export default class Home extends React.Component {
 
 
         {this.state.songs && this.state.songs.length != 0 &&
-          <div className="music">
+          <div className="lists">
             <h4>Last listened</h4>
             <div>
               {this.state.songs.map((song, i) => {
                 return (
                   <a href={song.url} key={i} target="_blank">
-                    <div className="song">
+                    <div className="listItem">
                       <img src={song.image[2]["#text"]} style={{width: 54, height: 54, float: "left", borderRadius: 5, marginRight: 10}}/>
                       <div>
                         <small style={{textTransform: "uppercase"}}>{song.album["#text"]}</small>
                         <p>{song.artist["#text"]} - {song.name}</p>
+                      </div>
+                    </div>
+                  </a>
+                )
+              })}
+            </div>
+          </div>
+        }
+
+
+        {this.state.read && this.state.read.length != 0 &&
+          <div className="lists">
+            <h4>Last read</h4>
+            <div>
+              {this.state.read.map((book, i) => {
+                return (
+                  <a href={book.url} key={"read" + i} target="_blank">
+                    <div className="listItem">
+                      <img src={book.cover} style={{width: 54, height: 80, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <div>
+                        <small style={{textTransform: "uppercase"}}>{book.author}</small>
+                        <p>{book.title}</p>
+                      </div>
+                    </div>
+                  </a>
+                )
+              })}
+            </div>
+          </div>
+        }
+
+
+        {this.state.to_read && this.state.to_read.length != 0 &&
+          <div className="lists">
+            <h4>Will read</h4>
+            <div>
+              {this.state.to_read.map((book, i) => {
+                return (
+                  <a href={book.url} key={"to_read" + i} target="_blank">
+                    <div className="listItem">
+                      <img src={book.cover} style={{width: 54, height: 80, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <div>
+                        <small style={{textTransform: "uppercase"}}>{book.author}</small>
+                        <p>{book.title}</p>
                       </div>
                     </div>
                   </a>
