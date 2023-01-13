@@ -13,13 +13,20 @@ export default class Home extends React.Component {
 
   getSongs(){
     fetch("/api/listen").then(res => res.json()).then(res => {
-      this.setState({songs: res.recenttracks.track})
+      console.log(res.albums);
+      this.setState({songs: res.tracks.recenttracks.track, albums: res.albums.topalbums.album})
     });
   }
 
   getBooks(){
     fetch("/api/read").then(res => res.json()).then(res => {
       this.setState({to_read: res.to_read, read:res.read})
+    });
+  }
+
+  getGames(){
+    fetch("/api/play").then(res => res.json()).then(res => {
+      this.setState({last_games:res.last_played, most_games: res.most_played})
     });
   }
 
@@ -51,6 +58,7 @@ export default class Home extends React.Component {
     }, 5000);
     this.getSongs();
     this.getBooks();
+    this.getGames();
   }
 
   revealTopics(){
@@ -192,11 +200,11 @@ export default class Home extends React.Component {
 
         {this.state.songs && this.state.songs.length != 0 &&
           <div className="lists">
-            <h4>Last listened</h4>
+            <h4>Last listened tracks</h4>
             <div>
               {this.state.songs.map((song, i) => {
                 return (
-                  <a href={song.url} key={i} target="_blank">
+                  <a href={song.url} key={"songs"+i} target="_blank">
                     <div className="listItem">
                       <img src={song.image[2]["#text"]} style={{width: 54, height: 54, float: "left", borderRadius: 5, marginRight: 10}}/>
                       <div>
@@ -211,6 +219,26 @@ export default class Home extends React.Component {
           </div>
         }
 
+        {this.state.albums && this.state.albums.length != 0 &&
+          <div className="lists">
+            <h4>Most listened albums</h4>
+            <div>
+              {this.state.albums.map((album, i) => {
+                return (
+                  <a href={album.url} key={"albums"+i} target="_blank">
+                    <div className="listItem">
+                      <img src={album.image[2]["#text"]} style={{width: 54, height: 54, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <div>
+                        <small style={{textTransform: "uppercase"}}>{album.artist.name}</small>
+                        <p>{album.name} - <span style={{opacity: 0.4, fontWeight: "normal"}}>{album.playcount} Listens</span></p>
+                      </div>
+                    </div>
+                  </a>
+                )
+              })}
+            </div>
+          </div>
+        }
 
         {this.state.read && this.state.read.length != 0 &&
           <div className="lists">
@@ -222,7 +250,7 @@ export default class Home extends React.Component {
                     <div className="listItem">
                       <img src={book.cover} style={{width: 54, height: 80, float: "left", borderRadius: 5, marginRight: 10}}/>
                       <div>
-                        <small style={{textTransform: "uppercase"}}>{book.author}</small>
+                        <small style={{textTransform: "uppercase"}}>{book.author.split(", ")[1] + " " + book.author.split(", ")[0]}</small>
                         <p>{book.title}</p>
                       </div>
                     </div>
@@ -232,7 +260,6 @@ export default class Home extends React.Component {
             </div>
           </div>
         }
-
 
         {this.state.to_read && this.state.to_read.length != 0 &&
           <div className="lists">
@@ -244,8 +271,52 @@ export default class Home extends React.Component {
                     <div className="listItem">
                       <img src={book.cover} style={{width: 54, height: 80, float: "left", borderRadius: 5, marginRight: 10}}/>
                       <div>
-                        <small style={{textTransform: "uppercase"}}>{book.author}</small>
+                        <small style={{textTransform: "uppercase"}}>{book.author.split(", ")[1] + " " + book.author.split(", ")[0]}</small>
                         <p>{book.title}</p>
+                      </div>
+                    </div>
+                  </a>
+                )
+              })}
+            </div>
+          </div>
+        }
+
+
+        {this.state.last_games && this.state.last_games.length != 0 &&
+          <div className="lists">
+            <h4>Last played games</h4>
+            <div>
+              {this.state.last_games.map((game, i) => {
+                return (
+                  <a href={`https://store.steampowered.com/app/${game.appid}`} key={"last_games" + i} target="_blank">
+                    <div className="listItem">
+                      <img src={game.logo} style={{width: 184, height: 69, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <div>
+                        <small style={{textTransform: "uppercase"}}>{game.hours_forever} Hours</small>
+                        <p>{game.name}</p>
+                      </div>
+                    </div>
+                  </a>
+                )
+              })}
+            </div>
+          </div>
+        }
+
+
+        {this.state.most_games && this.state.most_games.length != 0 &&
+          <div className="lists">
+            <h4>Most played games</h4>
+            <div>
+              {this.state.most_games.map((game, i) => {
+                return (
+                  <a href={`https://store.steampowered.com/app/${game.appid}`} key={"most_games" + i} target="_blank">
+                    <div className="listItem">
+                      <img src={game.logo} style={{width: 184, height: 69, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <div>
+                        <small style={{textTransform: "uppercase"}}>{game.hours_forever} Hours</small>
+                        <p>{game.name}</p>
                       </div>
                     </div>
                   </a>

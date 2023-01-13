@@ -684,7 +684,6 @@ img {
 .lists {
   margin: 20px 0px;
   padding-top: 30px;
-  min-height: 470px;
 }
 
 .lists > div > a {
@@ -703,6 +702,7 @@ img {
   display: flex;
   flex-direction: row;
   max-width: 600px;
+  min-width: 400px;
 }
 
 .listItem img {
