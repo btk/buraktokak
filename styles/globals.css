@@ -701,7 +701,7 @@ img {
   transition: 400ms all;
   display: flex;
   flex-direction: row;
-  max-width: 600px;
+  max-width: 500px;
   min-width: 400px;
 }
 

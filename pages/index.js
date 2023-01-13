@@ -291,7 +291,7 @@ export default class Home extends React.Component {
                 return (
                   <a href={`https://store.steampowered.com/app/${game.appid}`} key={"last_games" + i} target="_blank">
                     <div className="listItem">
-                      <img src={game.logo} style={{width: 184, height: 69, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <img src={game.logo} style={{width: 150, height: 55, float: "left", borderRadius: 5, marginRight: 10}}/>
                       <div>
                         <small style={{textTransform: "uppercase"}}>{game.hours_forever} Hours</small>
                         <p>{game.name}</p>
@@ -313,7 +313,7 @@ export default class Home extends React.Component {
                 return (
                   <a href={`https://store.steampowered.com/app/${game.appid}`} key={"most_games" + i} target="_blank">
                     <div className="listItem">
-                      <img src={game.logo} style={{width: 184, height: 69, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <img src={game.logo} style={{width: 150, height: 55, float: "left", borderRadius: 5, marginRight: 10}}/>
                       <div>
                         <small style={{textTransform: "uppercase"}}>{game.hours_forever} Hours</small>
                         <p>{game.name}</p>
