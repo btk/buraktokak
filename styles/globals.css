@@ -1,13 +1,3 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
-}
-
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -621,5 +611,115 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+.making, .made {
+  padding-top: 30px;
+}
+
+.making ul, .made ul {
+  margin: 0px;
+}
+
+.making li, .made li {
+  list-style: none;
+}
+
+.making li span, .made li span {
+  opacity: 0.7;
+}
+
+.making li b, .made li b {
+  font-weight: 600;
+}
+
+.tags {
+  margin: 20px 0px;
+  padding-top: 30px;
+}
+
+.tags div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  background: #f3f3f3;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 0.85em;
+}
+
+
+.contact {
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+  background: #eee;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 200ms all;
+  box-shadow: 0px 2px 5px -5px rgba(0,0,0,0);
+}
+
+.contact:hover {
+  box-shadow: 0px 2px 10px -5px rgba(0,0,0,0.5);
+  background: #fafafa;
+}
+
+img {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
+.music {
+  margin: 20px 0px;
+  padding-top: 30px;
+  min-height: 470px;
+}
+
+.music > div > a {
+  display: flex;
+}
+
+.song {
+  border-radius: 8px;
+  min-height: 65px;
+  padding: 8px;
+  padding-right: 20px;
+  background: #ffffff;
+  position: relative;
+  left: -8px;
+  transition: 400ms all;
+  display: flex;
+  flex-direction: row;
+}
+
+.song img {
+  display: block;
+}
+
+.song p {
+  margin-bottom: 0px;
+}
+
+.music a:hover .song {
+  background: #f3f3f3;
+}
+
+@media only screen and (max-width: 640px) {
+  .making li span, .made li span {
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 4px;
   }
 }
