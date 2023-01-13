@@ -718,9 +718,8 @@ img {
 }
 
 @media only screen and (max-width: 640px) {
-  .making li span, .made li span {
-    display: block;
-    padding-top: 2px;
-    padding-bottom: 4px;
+
+  .listItem {
+    min-width: auto;
   }
 }

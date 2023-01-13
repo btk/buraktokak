@@ -206,7 +206,7 @@ export default class Home extends React.Component {
                 return (
                   <a href={song.url} key={"songs"+i} target="_blank">
                     <div className="listItem">
-                      <img src={song.image[2]["#text"]} style={{width: 54, height: 54, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <img src={song.image[2]["#text"]} style={{width: 60, height: 60, float: "left", borderRadius: 5, marginRight: 10}}/>
                       <div>
                         <small style={{textTransform: "uppercase"}}>{song.album["#text"]}</small>
                         <p>{song.artist["#text"]} - {song.name}</p>
@@ -227,7 +227,7 @@ export default class Home extends React.Component {
                 return (
                   <a href={album.url} key={"albums"+i} target="_blank">
                     <div className="listItem">
-                      <img src={album.image[2]["#text"]} style={{width: 54, height: 54, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <img src={album.image[2]["#text"]} style={{width: 60, height: 60, float: "left", borderRadius: 5, marginRight: 10}}/>
                       <div>
                         <small style={{textTransform: "uppercase"}}>{album.artist.name}</small>
                         <p>{album.name} - <span style={{opacity: 0.4, fontWeight: "normal"}}>{album.playcount} Listens</span></p>
@@ -248,7 +248,7 @@ export default class Home extends React.Component {
                 return (
                   <a href={book.url} key={"read" + i} target="_blank">
                     <div className="listItem">
-                      <img src={book.cover} style={{width: 54, height: 80, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <img src={book.cover} style={{width: 60, height: 90, float: "left", borderRadius: 5, marginRight: 10}}/>
                       <div>
                         <small style={{textTransform: "uppercase"}}>{book.author.split(", ")[1] + " " + book.author.split(", ")[0]}</small>
                         <p>{book.title}</p>
@@ -269,7 +269,7 @@ export default class Home extends React.Component {
                 return (
                   <a href={book.url} key={"to_read" + i} target="_blank">
                     <div className="listItem">
-                      <img src={book.cover} style={{width: 54, height: 80, float: "left", borderRadius: 5, marginRight: 10}}/>
+                      <img src={book.cover} style={{width: 60, height: 90, float: "left", borderRadius: 5, marginRight: 10}}/>
                       <div>
                         <small style={{textTransform: "uppercase"}}>{book.author.split(", ")[1] + " " + book.author.split(", ")[0]}</small>
                         <p>{book.title}</p>

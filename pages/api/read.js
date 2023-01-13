@@ -8,7 +8,7 @@ async function goodreadsFetcher(type){
   let booksArray = [];
   books.forEach((book, i) => {
     if(book.includes(".jpg")){
-      let cover = "https://i.gr-assets.com/images" + book.split(`"`)[0];
+      let cover = "https://i.gr-assets.com/images" + book.split(`"`)[0].replace(`_SY75_`, `_SY150_`);
       let url = "https://www.goodreads.com/book/show/" + book.split(`/book/show/`)[1].split(`"`)[0];
       let title = book.split(`<label>title</label>`)[1].split(`">`)[2].split(`<`)[0];
       let author = book.split(`<label>author</label>`)[1].split(`">`)[2].split(`<`)[0];
