@@ -624,6 +624,7 @@ pre tt:after {
 
 .making li, .made li {
   list-style: none;
+  margin-bottom: calc(1.45rem / 2 + 1px);
 }
 
 .making li span, .made li span {
