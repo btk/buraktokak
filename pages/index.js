@@ -99,6 +99,8 @@ export default class Home extends React.Component {
             <li>Helping Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
             <li>Leading 🕹 <a href="https://assistivecards.com/games" target="_blank"><b>Assistive Cards Games</b></a>, <span>educational assistive mobile games</span></li>
             <li>Helping Make ‍🚀 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Untitled Game</b></a>, <span>a PC tower defense / resource management game</span></li>
+            <li>Helping Release 🏎️ <a href="https://store.steampowered.com/app/2172750/Demolition_Party/" target="_blank"><b>Demolition Party</b></a>, <span>a co-op PC party game on Steam</span></li>
+            <li>Mentoring for 🎮 <a href="https://nextingame.com/" target="_blank"><b>Publish Your Next Game</b></a>, <span>a launch pad event for upcoming game developers</span></li>
           </ul>
         </div>
         </Twemoji>
@@ -107,10 +109,10 @@ export default class Home extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Released 🏙 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Cardboard Town</b></a>, <span>a PC city building and card game</span></li>
             <li>Graduated 🏫 <b>Software Engineering</b>, <span>master's degree from METU</span></li>
             <li>Made 🎛️ <a href="https://vectormixer.com/" target="_blank"><b>Vector Mixer</b></a>, <span>a tool to remix and create unique svg vectors</span></li>
             <li>Made 💠 <a href="https://www.figma.com/community/plugin/1200930158268112554" target="_blank"><b>SVG Repo for Figma</b></a>, <span>a figma plugin allows you to drag drop vectors and icons from SVG Repo</span></li>
-            <li>Helped Make 🏙 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Cardboard Town</b></a>, <span>a PC city building and card game</span></li>
             <li>Made 🎨 <a href="https://www.svgrepo.com/svg/97560/tomato-juice?edit=true" target="_blank"><b>SVG Repo Editor</b></a>, <span>a tool with internal SVG vector editor in NextJS</span></li>
             <li>Made 🌳 <a href="https://carbonneutralwebsite.org/" target="_blank"><b>Carbon Neutral Website</b></a>, <span>a tool for offseting website's carbon footprint</span></li>
             <li>Shipped 🐳 <a href="https://www.svgrepo.com/" target="_blank"><b>SVG Repo V2</b></a>, <span>a 2nd version of SVG Repo with competition equal functionality</span></li>
