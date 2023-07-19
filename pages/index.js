@@ -99,8 +99,7 @@ export default class Home extends React.Component {
             <li>Helping Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
             <li>Leading 🕹 <a href="https://assistivecards.com/games" target="_blank"><b>Assistive Cards Games</b></a>, <span>educational assistive mobile games</span></li>
             <li>Helping Make ‍🚀 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Untitled Game</b></a>, <span>a PC tower defense / resource management game</span></li>
-            <li>Helping Release 🏎️ <a href="https://store.steampowered.com/app/2172750/Demolition_Party/" target="_blank"><b>Demolition Party</b></a>, <span>a co-op PC party game on Steam</span></li>
-            <li>Mentoring for 🎮 <a href="https://nextingame.com/" target="_blank"><b>Publish Your Next Game</b></a>, <span>a launch pad event for upcoming game developers</span></li>
+            <li>Making 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find original SVG files</span></li>
           </ul>
         </div>
         </Twemoji>
@@ -171,7 +170,6 @@ export default class Home extends React.Component {
           <h3>Future</h3>
           <ul>
             <li>Will be Making 🔗 <a href="https://iconlist.co/" target="_blank"><b>iconlist.co</b></a>, <span>a tool to manage your project icons, discover new ones</span></li>
-            <li>Will be Making 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find original SVG vectors</span></li>
             <li>Will be Making    🗣️ <a href="https://uncopy.co/" target="_blank"><b>uncopy.co</b></a>, <span>an AI companion for copywriting</span></li>
             <li>Will be Creating 👩🏼‍🎨 <a href="https://opendesign.fyi/" target="_blank"><b>OpenDesign.FYI</b></a>, <span>a license menifesto for open design</span></li>
             <li>Will be Creating 🤔 <a href="https://creativecommons.info/" target="_blank"><b>Creative Commons Info</b></a>, <span>a non-corporate license alternative for CC</span></li>
@@ -183,6 +181,8 @@ export default class Home extends React.Component {
             <li>Will be Making 👓 <a href="https://landingapi.com/" target="_blank"><b>Landing API</b></a>, <span>an API for your landing page (undisclosed SaaS)</span></li>
             <li>Will be Making 📜 <a href="https://makerhow.com/" target="_blank"><b>Makerhow</b></a>, <span>a long form tutorial on making fast/eff products</span></li>
             <li>Will be Making ❄️ <a href="https://unlogo.co/" target="_blank"><b>unlogo.co</b></a>, <span>a stable diffusion based general-purpose logo maker</span></li>
+            <li>Helping Release 🏎️ <a href="https://store.steampowered.com/app/2172750/Demolition_Party/" target="_blank"><b>Demolition Party</b></a>, <span>a co-op PC party game on Steam</span></li>
+            <li>Mentoring for 🎮 <a href="https://nextingame.com/" target="_blank"><b>Publish Your Next Game</b></a>, <span>a launch pad event for upcoming game developers</span></li>
           </ul>
         </div>
         </Twemoji>
