@@ -98,8 +98,7 @@ export default class Home extends React.Component {
             <li>Making    🥽 <a href="https://vrux.co/" target="_blank"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
             <li>Helping Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
             <li>Leading 🕹 <a href="https://assistivecards.com/games" target="_blank"><b>Assistive Cards Games</b></a>, <span>educational assistive mobile games</span></li>
-            <li>Helping Make ‍🚀 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Untitled Game</b></a>, <span>a PC tower defense / resource management game</span></li>
-            <li>Making 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find original SVG files</span></li>
+            <li>Helping Make ‍🚀 <a href="#" target="_blank"><b>Untitled Game</b></a>, <span>a PC tower defense / resource management game</span></li>
           </ul>
         </div>
         </Twemoji>
@@ -108,6 +107,7 @@ export default class Home extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Making 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find original SVG files</span></li>
             <li>Released 🏙 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Cardboard Town</b></a>, <span>a PC city building and card game</span></li>
             <li>Graduated 🏫 <b>Software Engineering</b>, <span>master's degree from METU</span></li>
             <li>Made 🎛️ <a href="https://vectormixer.com/" target="_blank"><b>Vector Mixer</b></a>, <span>a tool to remix and create unique svg vectors</span></li>
