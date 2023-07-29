@@ -181,8 +181,6 @@ export default class Home extends React.Component {
             <li>Will be Making 👓 <a href="https://landingapi.com/" target="_blank"><b>Landing API</b></a>, <span>an API for your landing page (undisclosed SaaS)</span></li>
             <li>Will be Making 📜 <a href="https://makerhow.com/" target="_blank"><b>Makerhow</b></a>, <span>a long form tutorial on making fast/eff products</span></li>
             <li>Will be Making ❄️ <a href="https://unlogo.co/" target="_blank"><b>unlogo.co</b></a>, <span>a stable diffusion based general-purpose logo maker</span></li>
-            <li>Helping Release 🏎️ <a href="https://store.steampowered.com/app/2172750/Demolition_Party/" target="_blank"><b>Demolition Party</b></a>, <span>a co-op PC party game on Steam</span></li>
-            <li>Mentoring for 🎮 <a href="https://nextingame.com/" target="_blank"><b>Publish Your Next Game</b></a>, <span>a launch pad event for upcoming game developers</span></li>
           </ul>
         </div>
         </Twemoji>
