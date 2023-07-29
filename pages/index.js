@@ -107,6 +107,7 @@ export default class Home extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>MAde 👩🏼‍🎨 <a href="https://opendesign.fyi/" target="_blank"><b>Open Design License</b></a>, <span>a license menifesto for open design</span></li>
             <li>Making 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find original SVG files</span></li>
             <li>Released 🏙 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Cardboard Town</b></a>, <span>a PC city building and card game</span></li>
             <li>Graduated 🏫 <b>Software Engineering</b>, <span>master's degree from METU</span></li>
@@ -171,7 +172,6 @@ export default class Home extends React.Component {
           <ul>
             <li>Will be Making 🔗 <a href="https://iconlist.co/" target="_blank"><b>iconlist.co</b></a>, <span>a tool to manage your project icons, discover new ones</span></li>
             <li>Will be Making    🗣️ <a href="https://uncopy.co/" target="_blank"><b>uncopy.co</b></a>, <span>an AI companion for copywriting</span></li>
-            <li>Will be Creating 👩🏼‍🎨 <a href="https://opendesign.fyi/" target="_blank"><b>OpenDesign.FYI</b></a>, <span>a license menifesto for open design</span></li>
             <li>Will be Creating 🤔 <a href="https://creativecommons.info/" target="_blank"><b>Creative Commons Info</b></a>, <span>a non-corporate license alternative for CC</span></li>
             <li>Will be Making 🤘 <a href="https://metalmap.net/" target="_blank"><b>MetalMap</b></a>, <span>a map with popular/new released metal albums by band origin</span></li>
             <li>Will be Making 📦 <a href="https://fbxrepo.com/" target="_blank"><b>FBXRepo</b></a>, <span>a repository of open licensed FBX models</span></li>
