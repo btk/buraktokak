@@ -107,8 +107,8 @@ export default class Home extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
-            <li>MAde 👩🏼‍🎨 <a href="https://opendesign.fyi/" target="_blank"><b>Open Design License</b></a>, <span>a license menifesto for open design</span></li>
-            <li>Making 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find original SVG files</span></li>
+            <li>Made 👩🏼‍🎨 <a href="https://opendesign.fyi/" target="_blank"><b>Open Design License</b></a>, <span>a license menifesto for open design</span></li>
+            <li>Making 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find open-licensed SVG files</span></li>
             <li>Released 🏙 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Cardboard Town</b></a>, <span>a PC city building and card game</span></li>
             <li>Graduated 🏫 <b>Software Engineering</b>, <span>master's degree from METU</span></li>
             <li>Made 🎛️ <a href="https://vectormixer.com/" target="_blank"><b>Vector Mixer</b></a>, <span>a tool to remix and create unique svg vectors</span></li>
@@ -138,6 +138,7 @@ export default class Home extends React.Component {
             <li>Made ‍💨 <a href="https://speedrun.xyz" target="_blank"><b>speedrun.xyz</b></a>, <span>live timeline of record speedruns for games</span></li>
             <li>Helped Release 🏃‍♂️ <a href="https://stratera.co/game/viralfirar" target="_blank"><b>Virar Firar</b></a>, <span>an arcade runner game with ft. 5 influencers</span></li>
             <li>Designed 🔰 <a href="https://stratera.co/" target="_blank"><b>Stratera.co</b></a>, <span>a website for the company</span></li>
+            <li>Made 🧺 <a href="https://www.iconrepo.com/" target="_blank"><b>ICON Repo</b></a>, <span>an open-licensed icon listing & search tool</span></li>
             <li>Re-Made 🦜 <a href="https://apps.apple.com/us/app/id1517824465" target="_blank"><b>Wordmoji</b></a>, <span>a new version of Wordmoji on ios</span></li>
             <li>Co-Made 🐰 <a href="https://apps.apple.com/us/app/leeloo-aac-autism-speech-app/id1508952198" target="_blank"><b>Leeloo AAC</b></a>, <span>a new version of Leeloo on ios</span></li>
             <li>Founded 🎈 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>a website for the company</span></li>
