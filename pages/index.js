@@ -108,7 +108,8 @@ export default class Home extends React.Component {
           <h3>Past</h3>
           <ul>
             <li>Made 👩🏼‍🎨 <a href="https://opendesign.fyi/" target="_blank"><b>Open Design License</b></a>, <span>a license menifesto for open design</span></li>
-            <li>Making 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find open-licensed SVG files</span></li>
+            <li>Made 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find open-licensed SVG files</span></li>
+            <li>Made 👨‍💻 <a href="https://github.com/btk/nextjs-google-adsense" target="_blank"><b>nextjs-google-adsense</b></a>, <span>Google AdSense addon for Next.js</span></li>
             <li>Released 🏙 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Cardboard Town</b></a>, <span>a PC city building and card game</span></li>
             <li>Graduated 🏫 <b>Software Engineering</b>, <span>master's degree from METU</span></li>
             <li>Made 🎛️ <a href="https://vectormixer.com/" target="_blank"><b>Vector Mixer</b></a>, <span>a tool to remix and create unique svg vectors</span></li>
