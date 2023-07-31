@@ -86,7 +86,7 @@ export default class Home extends React.Component {
             </div>
           }
         </div>
-        <Twemoji options={{ className: 'twemoji', base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' }}>
+        <Twemoji options={{ className: 'twemoji', base: 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/' }}>
 
         <div className="making">
           <h3>Currently</h3>
@@ -99,11 +99,15 @@ export default class Home extends React.Component {
             <li>Helping Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
             <li>Leading 🕹 <a href="https://assistivecards.com/games" target="_blank"><b>Assistive Cards Games</b></a>, <span>educational assistive mobile games</span></li>
             <li>Helping Make ‍🚀 <a href="#" target="_blank"><b>Untitled Game</b></a>, <span>a PC tower defense / resource management game</span></li>
+            <li>Helping Make ‍🗼 <a href="#" target="_blank"><b>Untitled Game</b></a>, <span>a PC auto battler game</span></li>
+            <li>Making  🐳 <a href="https://easylogo.dev/" target="_blank"><b>EasyLogo</b></a>, <span>a tool that helps you design easy and fast logos</span></li>
+            <li>Making  🫠 <a href="https://meltingface.org/" target="_blank"><b>Melting Face</b></a>, <span>a tool that helps you melt faces</span></li>
+            <li>Making  🤣 <a href="https://rollingface.org/" target="_blank"><b>Rolling Face</b></a>, <span>a tool that helps you roll a face</span></li>
           </ul>
         </div>
         </Twemoji>
 
-        <Twemoji options={{ className: 'twemoji', base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' }}>
+        <Twemoji options={{ className: 'twemoji', base: 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/' }}>
         <div className="made">
           <h3>Past</h3>
           <ul>
@@ -168,7 +172,7 @@ export default class Home extends React.Component {
         </div>
         </Twemoji>
 
-        <Twemoji options={{ className: 'twemoji', base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' }}>
+        <Twemoji options={{ className: 'twemoji', base: 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/' }}>
         <div className="made" style={{display: "none"}}>
           <h3>Future</h3>
           <ul>
