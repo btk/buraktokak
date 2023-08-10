@@ -98,11 +98,10 @@ export default class Home extends React.Component {
             <li>Making    🥽 <a href="https://vrux.co/" target="_blank"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
             <li>Helping Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
             <li>Leading 🕹 <a href="https://assistivecards.com/games" target="_blank"><b>Assistive Cards Games</b></a>, <span>educational assistive mobile games</span></li>
-            <li>Helping Make ‍🚀 <a href="#" target="_blank"><b>Untitled Game</b></a>, <span>a PC tower defense / resource management game</span></li>
+            <li>Helping Make ‍🚀 <a href="#" target="_blank"><b>Untitled Game</b></a>, <span>a PC mining & tower defense game</span></li>
             <li>Helping Make ‍🗼 <a href="#" target="_blank"><b>Untitled Game</b></a>, <span>a PC auto battler game</span></li>
             <li>Making  🐳 <a href="https://easylogo.dev/" target="_blank"><b>EasyLogo</b></a>, <span>a tool that helps you design easy and fast logos</span></li>
-            <li>Making  🫠 <a href="https://meltingface.org/" target="_blank"><b>Melting Face</b></a>, <span>a tool that helps you melt faces</span></li>
-            <li>Making  🤣 <a href="https://rollingface.org/" target="_blank"><b>Rolling Face</b></a>, <span>a tool that helps you roll a face</span></li>
+            <li>Making  📐 <a href="https://sitemanifest.dev/" target="_blank"><b>sitemanifest.dev</b></a>, <span>a tool that helps you generate site manifests</span></li>
           </ul>
         </div>
         </Twemoji>
@@ -176,6 +175,9 @@ export default class Home extends React.Component {
         <div className="made" style={{display: "none"}}>
           <h3>Future</h3>
           <ul>
+
+            <li>Making  🫠 <a href="https://meltingface.org/" target="_blank"><b>Melting Face</b></a>, <span>a tool that helps you melt faces</span></li>
+            <li>Making  🤣 <a href="https://rollingface.org/" target="_blank"><b>Rolling Face</b></a>, <span>a tool that helps you roll a face</span></li>
             <li>Will be Making 🔗 <a href="https://iconlist.co/" target="_blank"><b>iconlist.co</b></a>, <span>a tool to manage your project icons, discover new ones</span></li>
             <li>Will be Making    🗣️ <a href="https://uncopy.co/" target="_blank"><b>uncopy.co</b></a>, <span>an AI companion for copywriting</span></li>
             <li>Will be Creating 🤔 <a href="https://creativecommons.info/" target="_blank"><b>Creative Commons Info</b></a>, <span>a non-corporate license alternative for CC</span></li>
