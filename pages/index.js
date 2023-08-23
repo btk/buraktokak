@@ -100,8 +100,9 @@ export default class Home extends React.Component {
             <li>Leading 🕹 <a href="https://assistivecards.com/games" target="_blank"><b>Assistive Cards Games</b></a>, <span>educational assistive mobile games</span></li>
             <li>Helping Make ‍🚀 <a href="#" target="_blank"><b>Untitled Game</b></a>, <span>a PC mining & tower defense game</span></li>
             <li>Helping Make ‍🗼 <a href="#" target="_blank"><b>Untitled Game</b></a>, <span>a PC auto battler game</span></li>
-            <li>Making  🐳 <a href="https://easylogo.dev/" target="_blank"><b>EasyLogo</b></a>, <span>a tool that helps you design easy and fast logos</span></li>
-            <li>Making  📐 <a href="https://sitemanifest.dev/" target="_blank"><b>sitemanifest.dev</b></a>, <span>a tool that helps you generate site manifests</span></li>
+            <li>Making 🐳 <a href="https://easylogo.dev/" target="_blank"><b>EasyLogo</b></a>, <span>a tool that helps you design easy and fast logos</span></li>
+            <li>Making 📐 <a href="https://sitemanifest.dev/" target="_blank"><b>sitemanifest.dev</b></a>, <span>a tool that helps you generate site manifests</span></li>
+            <li>Making 🛠️ <a href="https://www.svgrepo.com/tools/" target="_blank"><b>Tools by SVG Repo</b></a>, <span>a collection of tools for developer & designers</span></li>
           </ul>
         </div>
         </Twemoji>
