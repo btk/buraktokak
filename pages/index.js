@@ -12,10 +12,11 @@ export default class Home extends React.Component {
   }
 
   getSongs(){
-    fetch("/api/listen").then(res => res.json()).then(res => {
-      console.log(res.albums);
-      this.setState({songs: res.tracks.recenttracks.track, albums: res.albums.topalbums.album})
-    });
+      fetch("/api/listen").then(res => res.json()).then(res => {
+        if(res.tracks.recenttracks){
+          this.setState({songs: res.tracks.recenttracks.track, albums: res.albums.topalbums.album})
+        }
+      });
   }
 
   getBooks(){
@@ -56,6 +57,7 @@ export default class Home extends React.Component {
     setInterval(() => {
       this.makerTextGlitch();
     }, 5000);
+
     this.getSongs();
     this.getBooks();
     this.getGames();
@@ -94,15 +96,16 @@ export default class Home extends React.Component {
             <li>Working for 💙 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>creating developer tooling software</span></li>
             <li>Working for 🔰 <a href="https://stratera.co/" target="_blank"><b>Stratera Games</b></a>, <span>making fun indie games</span></li>
             <li>Working for 🎴 <a href="https://assistivecards.com/" target="_blank"><b>Assistive Cards</b></a>, <span>making assistive accessibility apps/software</span></li>
+            <li>Working for 🐁 <a href="https://tinymice.org/" target="_blank"><b>Tinymice Entertainment</b></a>, <span>making tiny indie pc games</span></li>
             <li>Making    🧧️ <a href="https://uncontent.co/" target="_blank"><b>uncontent.co</b></a>, <span>an AI companion for your content marketing</span></li>
             <li>Making    🥽 <a href="https://vrux.co/" target="_blank"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
             <li>Helping Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
             <li>Leading 🕹 <a href="https://assistivecards.com/games" target="_blank"><b>Assistive Cards Games</b></a>, <span>educational assistive mobile games</span></li>
+            <li>Making ‍🪐 <a href="https://store.steampowered.com/app/2628570/Stellar_Settlers/" target="_blank"><b>Stellar Settlers</b></a>, <span>a PC space colony sim & city building game</span></li>
             <li>Helping Make ‍🚀 <a href="#" target="_blank"><b>Untitled Game</b></a>, <span>a PC mining & tower defense game</span></li>
             <li>Helping Make ‍🗼 <a href="#" target="_blank"><b>Untitled Game</b></a>, <span>a PC auto battler game</span></li>
             <li>Making 🐳 <a href="https://easylogo.dev/" target="_blank"><b>EasyLogo</b></a>, <span>a tool that helps you design easy and fast logos</span></li>
             <li>Making 📐 <a href="https://sitemanifest.dev/" target="_blank"><b>sitemanifest.dev</b></a>, <span>a tool that helps you generate site manifests</span></li>
-            <li>Making 🛠️ <a href="https://www.svgrepo.com/tools/" target="_blank"><b>Tools by SVG Repo</b></a>, <span>a collection of tools for developer & designers</span></li>
           </ul>
         </div>
         </Twemoji>
@@ -111,6 +114,9 @@ export default class Home extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Co-Made 🎟️ <a href="https://strateragames.itch.io/lost-but-found" target="_blank"><b>Lost But Found</b></a>, <span>a jam game where you manage a lost and found box in airport</span></li>
+            <li>Co-Made 🙈️ <a href="https://strateragames.itch.io/blindsight" target="_blank"><b>Blindsight</b></a>, <span>a platformer jam game where you play a blind girl</span></li>
+            <li>Made 🛠️ <a href="https://www.svgrepo.com/tools/" target="_blank"><b>Tools by SVG Repo</b></a>, <span>a collection of tools for developer & designers</span></li>
             <li>Made 👩🏼‍🎨 <a href="https://opendesign.fyi/" target="_blank"><b>Open Design License</b></a>, <span>a license menifesto for open design</span></li>
             <li>Made 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find open-licensed SVG files</span></li>
             <li>Made 👨‍💻 <a href="https://github.com/btk/nextjs-google-adsense" target="_blank"><b>nextjs-google-adsense</b></a>, <span>Google AdSense addon for Next.js</span></li>
