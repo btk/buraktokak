@@ -114,6 +114,8 @@ export default class Home extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Made ⚗️ <a href="https://sciencefigures.org/" target="_blank"><b>Science Figures</b></a>, <span>a searchable directory of open licensed science figures</span></li>
+            <li>Made ➿ <a href="https://playfulturkiye.com/" target="_blank"><b>Playful Turkiye</b></a>, <span>a website for the game publishing company</span></li>
             <li>Co-Made 🎟️ <a href="https://strateragames.itch.io/lost-but-found" target="_blank"><b>Lost But Found</b></a>, <span>a jam game where you manage a lost and found box in airport</span></li>
             <li>Co-Made 🙈️ <a href="https://strateragames.itch.io/blindsight" target="_blank"><b>Blindsight</b></a>, <span>a platformer jam game where you play a blind girl</span></li>
             <li>Made 🛠️ <a href="https://www.svgrepo.com/tools/" target="_blank"><b>Tools by SVG Repo</b></a>, <span>a collection of tools for developer & designers</span></li>
