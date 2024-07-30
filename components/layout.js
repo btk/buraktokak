@@ -14,9 +14,9 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer style={{fontSize: "0.9em", paddingTop: 20, paddingBottom: 30}}>
           Copyright © {new Date().getFullYear()}, {` `} Burak Tokak<br/>
-          <small>I operate, accept payments & pay taxes under my company <a href="https://dreamoriented.org" target="_blank">Dream Oriented Limited</a> in Republic of Turkey.</small>
+          <small>I operate, accept payments & pay taxes under my company <a href="https://dreamoriented.org" target="_blank">Dream Oriented Limited</a> in Republic of Turkey or <a href="https://dreamoriented.org" target="_blank">Dream Oriented Pvt Ltd</a> in Singapore</small>
           <br/>
-          <small><a href="https://www.google.com/search?q=ankara, turkey" target="_blank">Currently In ❄️ Ankara, Turkey</a></small>
+          <small><a href="#">Mostly Based in 🌃 Singapore, ❄️ Ankara, 🐘 Bangkok and 🌺 Tokyo</a></small>
         </footer>
       </div>
     </>
