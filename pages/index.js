@@ -76,7 +76,7 @@ export default class Home extends React.Component {
         />
         <div style={{marginTop: 100}}>
           <h1>Hi, I'm Burak.</h1>
-          <p style={{fontSize: 19, lineHeight: "1.5em"}}>Burak is an indie {this.state.makerText}, <br/>Trying to make useful things for everyone.</p>
+          <p style={{fontSize: 19, lineHeight: "1.5em"}}>Burak is an indie {this.state.makerText}, <br/>Making useful and sometimes silly things.</p>
           <div className="contact" onClick={() => this.revealTopics()}>{this.state.topics && <span>👇 Choose a topic below</span>}{!this.state.topics && <span>💭 Get in touch with me</span>}</div>
           { this.state.topics &&
             <div className="tags" style={{marginTop: 0}}>
