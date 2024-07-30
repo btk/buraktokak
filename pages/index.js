@@ -94,16 +94,11 @@ export default class Home extends React.Component {
           <h3>Currently</h3>
           <ul>
             <li>Working for 💙 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>creating developer tooling software</span></li>
-            <li>Working for 🐁 <a href="https://tinymice.org/" target="_blank"><b>Tinymice Entertainment</b></a>, <span>making tiny indie pc games</span></li>
-            <li>Working for 🎴 <a href="https://assistivecards.com/" target="_blank"><b>Assistive Cards</b></a>, <span>making assistive accessibility apps/software</span></li>
-            <li>Making ‍🪐 <a href="https://store.steampowered.com/app/2628570/Stellar_Settlers/" target="_blank"><b>Stellar Settlers</b></a>, <span>a PC space colony sim & city building game</span></li>
+            <li>Working for 🦆 <a href="http://rogueduck.net/" target="_blank"><b>Rogue Duck Interactive</b></a>, <span>making & publishing indie strategy pc games</span></li>
             <li>Making    🥽 <a href="https://vrux.co/" target="_blank"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
-            <li>Helping Make 💹 <a href="https://temettu.app/" target="_blank"><b>Temettu</b></a>, <span>a mobile app to track dividend yields of stocks</span></li>
-            <li>Leading 🕹 <a href="https://assistivecards.com/games" target="_blank"><b>Assistive Cards Games</b></a>, <span>educational assistive mobile games</span></li>
             <li>Helping Make 🥊 <a href="https://store.steampowered.com/app/2693940/NeoDuel_Backpack_Monsters/" target="_blank"><b>NeoDuel</b></a>, <span>a pvp autobattler pc game on Steam</span></li>
             <li>Making 📐 <a href="https://sitemanifest.dev/" target="_blank"><b>sitemanifest.dev</b></a>, <span>a tool that helps you generate site manifests</span></li>
-            <li>Co-Making 🎲 <a href="https://store.steampowered.com/app/2693930/Dice__Fold/" target="_blank"><b>Dice & Fold</b></a>, <span>a card & dice based dungeon crawler with a twist</span></li>
-            <li>Making 🚢 <a href="https://store.steampowered.com/app/2693930/Dice__Fold/" target="_blank"><b>Tidebound</b></a>, <span>a fishing & inventory management game</span></li>
+            <li>Making 🚢 <a href="https://store.steampowered.com/app/2755950/Tidebound/" target="_blank"><b>Tidebound</b></a>, <span>a fishing & inventory management game</span></li>
           </ul>
         </div>
         </Twemoji>
@@ -112,6 +107,10 @@ export default class Home extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Co-Founded & Worked for 🐁 <a href="https://tinymice.org/" target="_blank"><b>Tinymice Entertainment</b></a>, <span>making tiny indie pc games</span></li>
+            <li>Co-Made 🎲 <a href="https://store.steampowered.com/app/2693930/Dice__Fold/" target="_blank"><b>Dice & Fold</b></a>, <span>a card & dice based dungeon crawler with a twist</span></li>
+            <li>Made 📃 <a href="https://fluent1.vercel.app/" target="_blank"><b>fluent.</b></a>, <span>a tool that gives you crafted paragraphs to train your pronunciation</span></li>
+            <li>Co-Made ‍🪐 <a href="https://store.steampowered.com/app/2628570/Stellar_Settlers/" target="_blank"><b>Stellar Settlers</b></a>, <span>a PC space colony sim & city building game</span></li>
             <li>Made 💬 <a href="https://steamreview.vercel.app/" target="_blank"><b>Steam Review Analyzer</b></a>, <span>an nlp tool for analyzing game reviews on steam</span></li>
             <li>Co-Founded & Worked for 🔰 <a href="https://stratera.co/" target="_blank"><b>Stratera Games</b></a>, <span>making fun indie games, 5-ish years</span></li>
             <li>Made 🐳 <a href="https://easylogo.dev/" target="_blank"><b>EasyLogo</b></a>, <span>a tool that helps you design easy and fast logos</span></li>
@@ -122,6 +121,8 @@ export default class Home extends React.Component {
             <li>Made 🛠️ <a href="https://www.svgrepo.com/tools/" target="_blank"><b>Tools by SVG Repo</b></a>, <span>a collection of tools for developer & designers</span></li>
             <li>Made 👩🏼‍🎨 <a href="https://opendesign.fyi/" target="_blank"><b>Open Design License</b></a>, <span>a license menifesto for open design</span></li>
             <li>Made 🔍️ <a href="https://svgfind.com/" target="_blank"><b>SVG Find</b></a>, <span>search and find open-licensed SVG files</span></li>
+            <li>Co-Founded & Worked for 🎴 <a href="https://assistivecards.com/" target="_blank"><b>Assistive Cards</b></a>, <span>making assistive accessibility apps/software</span></li>
+            <li>Helped Make 🕹 <a href="https://assistivecards.com/games" target="_blank"><b>Assistive Cards Games</b></a>, <span>educational assistive mobile games</span></li>
             <li>Made 👨‍💻 <a href="https://github.com/btk/nextjs-google-adsense" target="_blank"><b>nextjs-google-adsense</b></a>, <span>Google AdSense addon for Next.js</span></li>
             <li>Released 🏙 <a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" target="_blank"><b>Cardboard Town</b></a>, <span>a PC city building and card game</span></li>
             <li>Graduated 🏫 <b>Software Engineering</b>, <span>master's degree from METU</span></li>
