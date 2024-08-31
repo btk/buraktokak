@@ -107,7 +107,7 @@ export default class Home extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
-            <li>Co-Founded & Worked for 🐁 <a href="https://tinymice.org/" target="_blank"><b>Tinymice Entertainment</b></a>, <span>making tiny indie pc games</span></li>
+            <li>Founded & Worked for 🐁 <a href="https://tinymice.org/" target="_blank"><b>Tinymice Entertainment</b></a>, <span>making tiny indie pc games</span></li>
             <li>Co-Made 🎲 <a href="https://store.steampowered.com/app/2693930/Dice__Fold/" target="_blank"><b>Dice & Fold</b></a>, <span>a card & dice based dungeon crawler with a twist</span></li>
             <li>Made 📃 <a href="https://fluent1.vercel.app/" target="_blank"><b>fluent.</b></a>, <span>a tool that gives you crafted paragraphs to train your pronunciation</span></li>
             <li>Co-Made ‍🪐 <a href="https://store.steampowered.com/app/2628570/Stellar_Settlers/" target="_blank"><b>Stellar Settlers</b></a>, <span>a PC space colony sim & city building game</span></li>
