@@ -115,6 +115,7 @@ export default class Home extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Made 🤘 <a href="https://metalmap.vercel.app/" target="_blank"><b>Metal Map</b></a>, <span>a map of well-known metal bands by their origin</span></li>
             <li>Published 🛖 <a href="https://store.steampowered.com/app/3056580/HEXAROMA/" target="_blank"><b>HEXAROMA</b></a>, <span>a village builder with colony sim elements</span></li>
             <li>Released 1.0 for ‍🪐 <a href="https://store.steampowered.com/app/2628570/Stellar_Settlers/" target="_blank"><b>Stellar Settlers</b></a>, <span>a PC space colony sim & city building game</span></li>
             <li>Published 🏙️ <a href="https://store.steampowered.com/app/2517440/Mini_City_Mayhem/" target="_blank"><b>Mini City: Mayhem</b></a>, <span>a tetris-like city builder against time</span></li>
@@ -176,7 +177,6 @@ export default class Home extends React.Component {
             <li>Made  📝 <a href="https://usememo.com/" target="_blank"><b>Memo</b></a>, <span>a smart note taking app using GH Gists</span></li>
             <li>Localized 📡 <a href="https://dijitalpsikoloji.com/" target="_blank"><b>Dijital Psikoloji</b></a>, <span>a list of principals of digital product design in Turkish</span></li>
             <li>Helped 👾 <a href="https://apps.apple.com/us/app/mola-arcade-space-shooter/id1493319285" target="_blank"><b>Mola</b></a>, <span>a mobile arcade space shooter game</span></li>
-            <li>Co-Founded 💊 <a href="https://drcanciftci.com/" target="_blank"><b>Dr. Can Supplementleri</b></a>, <span>a medical e-commerce website</span></li>
             <li>Made 🤔 <a href="https://www.dreamoriented.org/wordmoji/" target="_blank"><b>Wordmoji</b></a>, <span>a casual mobile emoji quiz game</span></li>
             <li>Made 🤞 <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.leeloo" target="_blank"><b>Leeloo AAC</b></a>, <span>a simple open source multilangulal mobile AAC app</span></li>
             <li>Made 🖼️ <a href="https://www.pngrepo.com/" target="_blank"><b>PNG Repo</b></a>, <span>a png clipart library, like svgrepo</span></li>
@@ -206,7 +206,6 @@ export default class Home extends React.Component {
             <li>Will be Making 🔗 <a href="https://iconlist.co/" target="_blank"><b>iconlist.co</b></a>, <span>a tool to manage your project icons, discover new ones</span></li>
             <li>Will be Making    🗣️ <a href="https://uncopy.co/" target="_blank"><b>uncopy.co</b></a>, <span>an AI companion for copywriting</span></li>
             <li>Will be Creating 🤔 <a href="https://creativecommons.info/" target="_blank"><b>Creative Commons Info</b></a>, <span>a non-corporate license alternative for CC</span></li>
-            <li>Will be Making 🤘 <a href="https://metalmap.net/" target="_blank"><b>MetalMap</b></a>, <span>a map with popular/new released metal albums by band origin</span></li>
             <li>Will be Making 📦 <a href="https://fbxrepo.com/" target="_blank"><b>FBXRepo</b></a>, <span>a repository of open licensed FBX models</span></li>
             <li>Will be Compiling 👨‍💼 <a href="https://founderlist.org/" target="_blank"><b>Founderlist</b></a>, <span>a list of actionable tasks for bootstrappers</span></li>
             <li>Will be Making 🧢 <a href="https://howoldwhen.com/" target="_blank"><b>How Old When?</b></a>, <span>a list for how old was that celeb during a movie/album</span></li>
