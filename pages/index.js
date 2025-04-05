@@ -99,6 +99,7 @@ export default class Home extends React.Component {
             <li>Making 📐 <a href="https://sitemanifest.dev/" target="_blank"><b>sitemanifest.dev</b></a>, <span>a tool that helps you generate site manifests</span></li>
             <li>Making 🚢 <a href="https://store.steampowered.com/app/2755950/Tidebound/" target="_blank"><b>Tidebound</b></a>, <span>a fishing & inventory management game</span></li>
             <li>Making 🗂 <a href="https://store.steampowered.com/app/3415240/Cozy_Organizer/" target="_blank"><b>Cozy Organizer</b></a>, <span>an item organization game on Steam</span></li>
+            <li>Making 🚚 <a href="https://store.steampowered.com/app/3496000/Ship_Inc/" target="_blank"><b>Ship, Inc.</b></a>, <span>a parcel packaging PC game on Steam</span></li>
             <li>Publishing 🔮 <a href="https://store.steampowered.com/app/3415230/Witchy_Business/" target="_blank"><b>Witchy Business</b></a>, <span>a witch job-simulator game on Steam</span></li>
             <li>Publishing 👑 <a href="https://store.steampowered.com/app/2655590/Kingdoms_Deck/" target="_blank"><b>Kingdom's Deck</b></a>, <span>a kingdom builder & defense pc game on Steam</span></li>
             <li>Publishing 👽 <a href="https://store.steampowered.com/app/2449450/Clonizer/" target="_blank"><b>Clonizer</b></a>, <span>a hex based roguelike deckbuilder pc game on Steam</span></li>
