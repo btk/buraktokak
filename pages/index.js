@@ -93,8 +93,7 @@ export default class Home extends React.Component {
         <div className="making">
           <h3>Currently</h3>
           <ul>
-            <li>Working for 💙 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>creating developer tooling software</span></li>
-            <li>Working for 🦆 <a href="http://rogueduck.net/" target="_blank"><b>Rogue Duck Interactive</b></a>, <span>making & publishing indie strategy pc games</span></li>
+            <li>Co-Founded & Working for 🦆 <a href="http://rogueduck.net/" target="_blank"><b>Rogue Duck Interactive</b></a>, <span>making & publishing indie strategy pc games</span></li>
             <li>Making    🥽 <a href="https://vrux.co/" target="_blank"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
             <li>Making 📐 <a href="https://sitemanifest.dev/" target="_blank"><b>sitemanifest.dev</b></a>, <span>a tool that helps you generate site manifests</span></li>
             <li>Making 🚢 <a href="https://store.steampowered.com/app/2755950/Tidebound/" target="_blank"><b>Tidebound</b></a>, <span>a fishing & inventory management game</span></li>
@@ -106,6 +105,7 @@ export default class Home extends React.Component {
             <li>Publishing 🎯 <a href="https://store.steampowered.com/app/3301530/Boogey_Hunters/" target="_blank"><b>Boogey Hunters</b></a>, <span>an ammo-building roguelike pc game on Steam</span></li>
             <li>Publishing 🎨 <a href="https://store.steampowered.com/app/3454660/Color_Factory_Automation_Meets_Canvas/" target="_blank"><b>Color Factory</b></a>, <span>a relaxing factory-building game on Steam</span></li>
             <li>Publishing ⚽ <a href="https://store.steampowered.com/app/3241940/Regista_Reign_Your_Football_Club/" target="_blank"><b>Regista</b></a>, <span>a football themed choose your own adventure game on Steam</span></li>
+            <li>Publishing 🚚 <a href="https://store.steampowered.com/app/3521410/Cats__Cups/" target="_blank"><b>Cats & Cups</b></a>, <span>a 2d barista sim PC game on Steam</span></li>
           </ul>
         </div>
         </Twemoji>
@@ -117,6 +117,7 @@ export default class Home extends React.Component {
           <h3>Past</h3>
           <ul>
             <li>Made 🤘 <a href="https://metalmap.vercel.app/" target="_blank"><b>Metal Map</b></a>, <span>a map of well-known metal bands by their origin</span></li>
+            <li>Founded & Worked for 💙 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>created developer tooling for almost a decade</span></li>
             <li>Published 🛖 <a href="https://store.steampowered.com/app/3056580/HEXAROMA/" target="_blank"><b>HEXAROMA</b></a>, <span>a village builder with colony sim elements</span></li>
             <li>Released 1.0 for ‍🪐 <a href="https://store.steampowered.com/app/2628570/Stellar_Settlers/" target="_blank"><b>Stellar Settlers</b></a>, <span>a PC space colony sim & city building game</span></li>
             <li>Published 🏙️ <a href="https://store.steampowered.com/app/2517440/Mini_City_Mayhem/" target="_blank"><b>Mini City: Mayhem</b></a>, <span>a tetris-like city builder against time</span></li>
