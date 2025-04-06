@@ -93,7 +93,7 @@ export default class Home extends React.Component {
         <div className="making">
           <h3>Currently</h3>
           <ul>
-            <li>Co-Founded & Working for 🦆 <a href="http://rogueduck.net/" target="_blank"><b>Rogue Duck Interactive</b></a>, <span>making & publishing indie strategy pc games</span></li>
+            <li>Working for 🦆 <a href="http://rogueduck.net/" target="_blank"><b>Rogue Duck Interactive</b></a>, <span>making & publishing indie strategy pc games</span></li>
             <li>Making    🥽 <a href="https://vrux.co/" target="_blank"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
             <li>Making 📐 <a href="https://sitemanifest.dev/" target="_blank"><b>sitemanifest.dev</b></a>, <span>a tool that helps you generate site manifests</span></li>
             <li>Making 🚢 <a href="https://store.steampowered.com/app/2755950/Tidebound/" target="_blank"><b>Tidebound</b></a>, <span>a fishing & inventory management game</span></li>
