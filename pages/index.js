@@ -116,7 +116,7 @@ export default class Home extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
-            <li>Making  🫠 <a href="https://meltingface.org/" target="_blank"><b>Melting Face</b></a>, <span>a tool that generates branding & interface vibe with AI</span></li>
+            <li>Made 🫠 <a href="https://meltingface.org/" target="_blank"><b>Melting Face</b></a>, <span>a tool that generates branding & interface vibe with AI</span></li>
             <li>Made 🤘 <a href="https://metalmap.vercel.app/" target="_blank"><b>Metal Map</b></a>, <span>a map of well-known metal bands by their origin</span></li>
             <li>Founded & Worked for 💙 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>created developer tooling for almost a decade</span></li>
             <li>Published 🛖 <a href="https://store.steampowered.com/app/3056580/HEXAROMA/" target="_blank"><b>HEXAROMA</b></a>, <span>a village builder with colony sim elements</span></li>
