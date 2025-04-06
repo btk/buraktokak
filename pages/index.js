@@ -116,6 +116,7 @@ export default class Home extends React.Component {
         <div className="made">
           <h3>Past</h3>
           <ul>
+            <li>Making  🫠 <a href="https://meltingface.org/" target="_blank"><b>Melting Face</b></a>, <span>a tool that generates branding & interface vibe with AI</span></li>
             <li>Made 🤘 <a href="https://metalmap.vercel.app/" target="_blank"><b>Metal Map</b></a>, <span>a map of well-known metal bands by their origin</span></li>
             <li>Founded & Worked for 💙 <a href="https://dreamoriented.org/" target="_blank"><b>Dream Oriented</b></a>, <span>created developer tooling for almost a decade</span></li>
             <li>Published 🛖 <a href="https://store.steampowered.com/app/3056580/HEXAROMA/" target="_blank"><b>HEXAROMA</b></a>, <span>a village builder with colony sim elements</span></li>
@@ -203,7 +204,6 @@ export default class Home extends React.Component {
           <h3>Future</h3>
           <ul>
             <li>Making    🧧️ <a href="https://uncontent.co/" target="_blank"><b>uncontent.co</b></a>, <span>an AI companion for your content marketing</span></li>
-            <li>Making  🫠 <a href="https://meltingface.org/" target="_blank"><b>Melting Face</b></a>, <span>a tool that helps you melt faces</span></li>
             <li>Making  🤣 <a href="https://rollingface.org/" target="_blank"><b>Rolling Face</b></a>, <span>a tool that helps you roll a face</span></li>
             <li>Will be Making 🔗 <a href="https://iconlist.co/" target="_blank"><b>iconlist.co</b></a>, <span>a tool to manage your project icons, discover new ones</span></li>
             <li>Will be Making    🗣️ <a href="https://uncopy.co/" target="_blank"><b>uncopy.co</b></a>, <span>an AI companion for copywriting</span></li>
