@@ -190,6 +190,7 @@ export default function Home() {
           Burak is an indie {makerText}, <br />
           Making useful and sometimes silly things.
         </p>
+        <h2 style={{ display: 'none' }}>Digital Product Portfolio</h2>
         <div className="contact" onClick={() => setTopics(!topics)}>
           {topics ? <span>👇 Choose a topic below</span> : <span>💭 Get in touch with me</span>}
         </div>
@@ -209,7 +210,7 @@ export default function Home() {
           </div>
         )}
       </div>
-      
+
       <Suspense fallback={<Loading />}>
         <Twemoji options={{ className: 'twemoji', base: 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/' }}>
           <div className="making">
