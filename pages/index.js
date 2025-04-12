@@ -49,11 +49,13 @@ export default function Home() {
   const [lastGames, setLastGames] = useState([])
   const [mostGames, setMostGames] = useState([])
   const router = useRouter()
-  const [isLoading, setIsLoading] = useState(true);
+  const [isSongsLoading, setIsSongsLoading] = useState(true)
+  const [isBooksLoading, setIsBooksLoading] = useState(true)
+  const [isGamesLoading, setIsGamesLoading] = useState(true)
 
   const getSongs = async () => {
     try {
-      setIsLoading(true);
+      setIsSongsLoading(true);
       const res = await fetch("/api/listen")
       const data = await res.json()
       if (data.tracks?.recenttracks) {
@@ -63,13 +65,13 @@ export default function Home() {
     } catch (error) {
       console.error("Error fetching songs:", error)
     } finally {
-      setIsLoading(false);
+      setIsSongsLoading(false);
     }
   }
 
   const getBooks = async () => {
     try {
-      setIsLoading(true);
+      setIsBooksLoading(true);
       const res = await fetch("/api/read")
       const data = await res.json()
       setToRead(data.to_read)
@@ -77,13 +79,13 @@ export default function Home() {
     } catch (error) {
       console.error("Error fetching books:", error)
     } finally {
-      setIsLoading(false);
+      setIsBooksLoading(false);
     }
   }
 
   const getGames = async () => {
     try {
-      setIsLoading(true);
+      setIsGamesLoading(true);
       const res = await fetch("/api/play")
       const data = await res.json()
       setLastGames(data.last_played)
@@ -91,7 +93,7 @@ export default function Home() {
     } catch (error) {
       console.error("Error fetching games:", error)
     } finally {
-      setIsLoading(false);
+      setIsGamesLoading(false);
     }
   }
 
@@ -283,44 +285,150 @@ export default function Home() {
         </div>
       </div>
 
-      {isLoading ? (
+      {isSongsLoading ? (
         <div className="lists">
-          <h4>Loading...</h4>
+          <h4>Loading tracks...</h4>
           <div>
             {[...Array(5)].map((_, i) => (
-              <GhostItem key={`ghost-${i}`} />
+              <GhostItem key={`ghost-songs-${i}`} />
             ))}
           </div>
         </div>
-      ) : (
-        <>
-          {songs && songs.length !== 0 && (
-            <div className="lists">
-              <h4>Last listened tracks</h4>
-              <div>
-                {songs.map((song, i) => (
-                  <a href={song.url} key={`songs${i}`} target="_blank" rel="noopener noreferrer">
-                    <div className="listItem">
-                      <Image
-                        src={song.image[2]["#text"]}
-                        alt={`${song.artist["#text"]} - ${song.name}`}
-                        width={60}
-                        height={60}
-                        loading="lazy"
-                        quality={75}
-                        style={{ borderRadius: 5, marginRight: 10 }}
-                      />
-                      <div>
-                        <small>{song.album["#text"]}</small>
-                        <p>{song.artist["#text"]} - {song.name}</p>
-                      </div>
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-          )}
-        </>
+      ) : songs && songs.length !== 0 && (
+        <div className="lists">
+          <h4>Last listened tracks</h4>
+          <div>
+            {songs.map((song, i) => (
+              <a href={song.url} key={`songs${i}`} target="_blank" rel="noopener noreferrer">
+                <div className="listItem">
+                  <Image
+                    src={song.image[2]["#text"]}
+                    alt={`${song.artist["#text"]} - ${song.name}`}
+                    width={60}
+                    height={60}
+                    loading="lazy"
+                    quality={75}
+                    style={{ borderRadius: 5, marginRight: 10 }}
+                  />
+                  <div>
+                    <small>{song.album["#text"]}</small>
+                    <p>{song.artist["#text"]} - {song.name}</p>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {isBooksLoading ? (
+        <div className="lists">
+          <h4>Loading books...</h4>
+          <div>
+            {[...Array(5)].map((_, i) => (
+              <GhostItem key={`ghost-books-${i}`} />
+            ))}
+          </div>
+        </div>
+      ) : (Array.isArray(toRead) && Array.isArray(read) && (toRead.length > 0 || read.length > 0)) && (
+        <div className="lists">
+          <h4>Books</h4>
+          <div>
+            {toRead?.map((book, i) => (
+              <a href={book.url} key={`toRead${i}`} target="_blank" rel="noopener noreferrer">
+                <div className="listItem">
+                  <Image
+                    src={book.cover}
+                    alt={`${book.title} by ${book.author}`}
+                    width={60}
+                    height={60}
+                    loading="lazy"
+                    quality={75}
+                    style={{ borderRadius: 5, marginRight: 10 }}
+                  />
+                  <div>
+                    <small>To Read</small>
+                    <p>{book.title} - {book.author}</p>
+                  </div>
+                </div>
+              </a>
+            ))}
+            {read?.map((book, i) => (
+              <a href={book.url} key={`read${i}`} target="_blank" rel="noopener noreferrer">
+                <div className="listItem">
+                  <Image
+                    src={book.cover}
+                    alt={`${book.title} by ${book.author}`}
+                    width={60}
+                    height={60}
+                    loading="lazy"
+                    quality={75}
+                    style={{ borderRadius: 5, marginRight: 10 }}
+                  />
+                  <div>
+                    <small>Read</small>
+                    <p>{book.title} - {book.author}</p>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {isGamesLoading ? (
+        <div className="lists">
+          <h4>Loading games...</h4>
+          <div>
+            {[...Array(5)].map((_, i) => (
+              <GhostItem key={`ghost-games-${i}`} />
+            ))}
+          </div>
+        </div>
+      ) : (lastGames.length > 0 || mostGames.length > 0) && (
+        <div className="lists">
+          <h4>Games</h4>
+          <div>
+            {lastGames.map((game, i) => (
+              <a href={game.url} key={`lastGames${i}`} target="_blank" rel="noopener noreferrer">
+                <div className="listItem">
+                  <Image
+                    src={game.image}
+                    alt={game.name}
+                    width={60}
+                    height={60}
+                    loading="lazy"
+                    quality={75}
+                    style={{ borderRadius: 5, marginRight: 10 }}
+                  />
+                  <div>
+                    <small>Recently Played</small>
+                    <p>{game.name}</p>
+                  </div>
+                </div>
+              </a>
+            ))}
+            {mostGames.map((game, i) => (
+              <a href={game.url} key={`mostGames${i}`} target="_blank" rel="noopener noreferrer">
+                <div className="listItem">
+                  <Image
+                    src={game.image}
+                    alt={game.name}
+                    width={60}
+                    height={60}
+                    loading="lazy"
+                    quality={75}
+                    style={{ borderRadius: 5, marginRight: 10 }}
+                  />
+                  <div>
+                    <small>Most Played</small>
+                    <p>{game.name}</p>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
       )}
     </Layout>
   )
