@@ -310,15 +310,15 @@ export default function Home() {
                       <Image
                         src={song.image[2]["#text"]}
                         alt={`${song.artist["#text"]} - ${song.name}`}
-                        width={90}
-                        height={90}
+                        width={70}
+                        height={70}
                         loading="lazy"
                         quality={75}
                         style={{ 
                           borderRadius: 5, 
                           marginRight: 10,
-                          width: '90px',
-                          height: '90px',
+                          width: '70px',
+                          height: '70px',
                           objectFit: 'cover'
                         }}
                       />
@@ -388,14 +388,14 @@ export default function Home() {
                       <Image
                         src={book.cover}
                         alt={`${book.title} by ${book.author}`}
-                        width={90}
+                        width={60}
                         height={90}
                         loading="lazy"
                         quality={75}
                         style={{ 
                           borderRadius: 5, 
                           marginRight: 10,
-                          width: '90px',
+                          width: '60px',
                           height: '90px',
                           objectFit: 'cover'
                         }}
@@ -422,14 +422,14 @@ export default function Home() {
                       <Image
                         src={book.cover}
                         alt={`${book.title} by ${book.author}`}
-                        width={90}
+                        width={60}
                         height={90}
                         loading="lazy"
                         quality={75}
                         style={{ 
                           borderRadius: 5, 
                           marginRight: 10,
-                          width: '90px',
+                          width: '60px',
                           height: '90px',
                           objectFit: 'cover'
                         }}
