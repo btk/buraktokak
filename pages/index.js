@@ -514,21 +514,21 @@ export default function Home() {
                   <Image
                     src={game.image}
                     alt={game.name}
-                    width={90}
-                    height={90}
+                    width={128.37}
+                    height={60}
                     loading="lazy"
                     quality={75}
                     style={{ 
                       borderRadius: 5, 
                       marginRight: 10,
-                      width: '90px',
-                      height: '90px',
+                      width: '128.37px',
+                      height: '60px',
                       objectFit: 'cover'
                     }}
                   />
                   <div>
-                    <small style={{ textTransform: "uppercase" }}>{game.name}</small>
-                    <p style={{ opacity: 0.5 }}>Last played</p>
+                    <small style={{ textTransform: "uppercase" }}>Last played - </small><span style={{ opacity: 0.5, fontWeight: "normal" }}>{game.playtimeText}</span>
+                    <p>{game.name}</p>
                   </div>
                 </div>
               </a>
@@ -539,21 +539,21 @@ export default function Home() {
                   <Image
                     src={game.image}
                     alt={game.name}
-                    width={90}
-                    height={90}
+                    width={128.37}
+                    height={60}
                     loading="lazy"
                     quality={75}
                     style={{ 
                       borderRadius: 5, 
                       marginRight: 10,
-                      width: '90px',
-                      height: '90px',
+                      width: '128.37px',
+                      height: '60px',
                       objectFit: 'cover'
                     }}
                   />
                   <div>
-                    <small style={{ textTransform: "uppercase" }}>{game.name}</small>
-                    <p style={{ opacity: 0.5 }}>Most played</p>
+                    <small style={{ textTransform: "uppercase" }}>Most played</small>  - <span style={{ opacity: 0.5, fontWeight: "normal" }}>{game.playtimeText}</span>
+                    <p>{game.name}</p>
                   </div>
                 </div>
               </a>

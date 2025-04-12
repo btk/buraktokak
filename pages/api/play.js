@@ -43,7 +43,10 @@ async function steamFetch(type) {
       name: game.name,
       image: `https://cdn.akamai.steamstatic.com/steam/apps/${game.appid}/header.jpg`,
       url: `https://store.steampowered.com/app/${game.appid}`,
-      playtime: game.playtime_forever
+      playtime: game.playtime_forever,
+      width: 256 * 0.8,
+      height: 75 * 0.8,
+      playtimeText: `${Math.round(game.playtime_forever / 60)} hours`
     }));
 
     return formattedGames;
