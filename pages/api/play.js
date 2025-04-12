@@ -38,7 +38,7 @@ async function steamFetch(type) {
     const sortedGames = data.response.games.sort((a, b) => b.playtime_forever - a.playtime_forever);
     
     // Format the games data
-    const formattedGames = sortedGames.slice(0, 6).map(game => ({
+    const formattedGames = sortedGames.map(game => ({
       id: game.appid,
       name: game.name,
       image: `https://cdn.akamai.steamstatic.com/steam/apps/${game.appid}/header.jpg`,
@@ -55,11 +55,16 @@ async function steamFetch(type) {
 
 export default async function handler(req, res) {
   try {
-    const games = await steamFetch();
+    const allGames = await steamFetch();
     
-    // Split into most played and last played (for now, we'll use the same data)
-    const most_played = games;
-    const last_played = games;
+    // Get last 5 games for last played
+    const last_played = allGames.slice(0, 5);
+    
+    // Get most played games, excluding those in last played
+    const lastPlayedIds = new Set(last_played.map(game => game.id));
+    const most_played = allGames
+      .filter(game => !lastPlayedIds.has(game.id))
+      .slice(0, 5);
 
     res.status(200).json({ last_played, most_played });
   } catch (error) {
