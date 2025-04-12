@@ -310,11 +310,17 @@ export default function Home() {
                       <Image
                         src={song.image[2]["#text"]}
                         alt={`${song.artist["#text"]} - ${song.name}`}
-                        width={60}
-                        height={60}
+                        width={90}
+                        height={90}
                         loading="lazy"
                         quality={75}
-                        style={{ borderRadius: 5, marginRight: 10 }}
+                        style={{ 
+                          borderRadius: 5, 
+                          marginRight: 10,
+                          width: '90px',
+                          height: '90px',
+                          objectFit: 'cover'
+                        }}
                       />
                       <div>
                         <small>{song.album["#text"]}</small>
@@ -336,11 +342,17 @@ export default function Home() {
                       <Image
                         src={album.image[2]["#text"]}
                         alt={`${album.artist.name} - ${album.name}`}
-                        width={60}
-                        height={60}
+                        width={90}
+                        height={90}
                         loading="lazy"
                         quality={75}
-                        style={{ borderRadius: 5, marginRight: 10 }}
+                        style={{ 
+                          borderRadius: 5, 
+                          marginRight: 10,
+                          width: '90px',
+                          height: '90px',
+                          objectFit: 'cover'
+                        }}
                       />
                       <div>
                         <small style={{ textTransform: "uppercase" }}>{album.artist.name}</small>
@@ -376,9 +388,17 @@ export default function Home() {
                       <Image
                         src={book.cover}
                         alt={`${book.title} by ${book.author}`}
-                        width={60}
+                        width={90}
                         height={90}
-                        style={{ borderRadius: 5, marginRight: 10 }}
+                        loading="lazy"
+                        quality={75}
+                        style={{ 
+                          borderRadius: 5, 
+                          marginRight: 10,
+                          width: '90px',
+                          height: '90px',
+                          objectFit: 'cover'
+                        }}
                       />
                       <div>
                         <small style={{ textTransform: "uppercase" }}>
@@ -402,9 +422,17 @@ export default function Home() {
                       <Image
                         src={book.cover}
                         alt={`${book.title} by ${book.author}`}
-                        width={60}
+                        width={90}
                         height={90}
-                        style={{ borderRadius: 5, marginRight: 10 }}
+                        loading="lazy"
+                        quality={75}
+                        style={{ 
+                          borderRadius: 5, 
+                          marginRight: 10,
+                          width: '90px',
+                          height: '90px',
+                          objectFit: 'cover'
+                        }}
                       />
                       <div>
                         <small style={{ textTransform: "uppercase" }}>
@@ -440,11 +468,17 @@ export default function Home() {
                   <Image
                     src={game.image}
                     alt={game.name}
-                    width={60}
-                    height={60}
+                    width={90}
+                    height={90}
                     loading="lazy"
                     quality={75}
-                    style={{ borderRadius: 5, marginRight: 10 }}
+                    style={{ 
+                      borderRadius: 5, 
+                      marginRight: 10,
+                      width: '90px',
+                      height: '90px',
+                      objectFit: 'cover'
+                    }}
                   />
                   <div>
                     <small>Recently Played</small>
@@ -459,11 +493,17 @@ export default function Home() {
                   <Image
                     src={game.image}
                     alt={game.name}
-                    width={60}
-                    height={60}
+                    width={90}
+                    height={90}
                     loading="lazy"
                     quality={75}
-                    style={{ borderRadius: 5, marginRight: 10 }}
+                    style={{ 
+                      borderRadius: 5, 
+                      marginRight: 10,
+                      width: '90px',
+                      height: '90px',
+                      objectFit: 'cover'
+                    }}
                   />
                   <div>
                     <small>Most Played</small>

@@ -3,18 +3,24 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['lastfm.freetls.fastly.net', 'steamcdn-a.akamaihd.net', 'photo.goodreads.com'],
+    domains: [
+      'cdn.sanity.io',
+      'lastfm.freetls.fastly.net',
+      'steamcdn-a.akamaihd.net',
+      'i.gr-assets.com',
+      'compressed.photo.goodreads.com'
+    ],
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   experimental: {
     optimizeCss: true,
-    optimizePackageImports: ['react-twemoji'],
+    optimizePackageImports: ['@next/font', 'react-twemoji'],
   },
   compress: true,
   poweredByHeader: false,
-  headers: async () => {
+  async headers() {
     return [
       {
         source: '/:path*',
@@ -43,8 +49,8 @@ const nextConfig = {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin'
           }
-        ],
-      },
+        ]
+      }
     ]
   },
   webpack: (config, { dev, isServer }) => {
