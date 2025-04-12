@@ -1,31 +1,50 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-async function goodreadsFetcher(type){
-  let goodreads = await fetch(`https://www.goodreads.com/review/list/${process.env.GOODREADS_LISTID}?shelf=${type}`)
-  let goodreadsText = await goodreads.text();
-  let books = goodreadsText.split(`"booksBody">`)[1].split(`https://i.gr-assets.com/images`);
-
-  let booksArray = [];
-  books.forEach((book, i) => {
-    if(book.includes(".jpg")){
-      let cover = "https://i.gr-assets.com/images" + book.split(`"`)[0].replace(`_SY75_`, `_SY150_`);
-      let url = "https://www.goodreads.com/book/show/" + book.split(`/book/show/`)[1].split(`"`)[0];
-      let title = book.split(`<label>title</label>`)[1].split(`">`)[2].split(`<`)[0];
-      let author = book.split(`<label>author</label>`)[1].split(`">`)[2].split(`<`)[0];
-
-      booksArray.push({cover, url, title, author});
-    }
-  });
-
-  return booksArray.slice(0,5);
-}
-
 export default async function handler(req, res) {
+  const { type } = req.query;
+  if (!type) {
+    return res.status(400).json({ error: 'Type parameter is required' });
+  }
 
+  try {
+    const goodreads = await fetch(
+      `https://www.goodreads.com/review/list/${process.env.GOODREADS_LISTID}?shelf=${type}`
+    );
+    
+    if (!goodreads.ok) {
+      throw new Error(`Goodreads API responded with status: ${goodreads.status}`);
+    }
 
-  let to_read = await goodreadsFetcher("to-read");
-  let read = await goodreadsFetcher("read");
+    const goodreadsText = await goodreads.text();
+    
+    // Check if the response contains the expected content
+    if (!goodreadsText.includes('"booksBody">')) {
+      return res.status(200).json({ [type]: [] });
+    }
 
-  res.statusCode = 200;
-  res.json({to_read, read});
+    const books = goodreadsText.split('"booksBody">')[1].split('https://i.gr-assets.com/images');
+    const booksArray = [];
+
+    books.forEach((book, i) => {
+      if (i === 0) return;
+      let bookTitle = book.split('title="')[1]?.split('"')[0];
+      let bookAuthor = book.split('authorName">')[1]?.split('<')[0];
+      let bookImage = book.split('src="')[1]?.split('"')[0];
+      let bookLink = book.split('href="')[1]?.split('"')[0];
+
+      if (bookTitle && bookAuthor && bookImage && bookLink) {
+        booksArray.push({
+          title: bookTitle,
+          author: bookAuthor,
+          image: bookImage,
+          link: bookLink,
+        });
+      }
+    });
+
+    res.status(200).json({ [type]: booksArray });
+  } catch (error) {
+    console.error('Error fetching books:', error);
+    res.status(500).json({ error: 'Failed to fetch books data' });
+  }
 }
