@@ -58,12 +58,16 @@ export default function Home() {
       setIsSongsLoading(true);
       const res = await fetch("/api/listen")
       const data = await res.json()
-      if (data.tracks?.recenttracks) {
+      if (data?.tracks?.recenttracks?.track) {
         setSongs(data.tracks.recenttracks.track)
+      }
+      if (data?.albums?.topalbums?.album) {
         setAlbums(data.albums.topalbums.album)
       }
     } catch (error) {
       console.error("Error fetching songs:", error)
+      setSongs([])
+      setAlbums([])
     } finally {
       setIsSongsLoading(false);
     }
