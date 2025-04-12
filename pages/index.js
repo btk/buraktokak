@@ -342,15 +342,15 @@ export default function Home() {
                       <Image
                         src={album.image[2]["#text"]}
                         alt={`${album.artist.name} - ${album.name}`}
-                        width={90}
-                        height={90}
+                        width={70}
+                        height={70}
                         loading="lazy"
                         quality={75}
                         style={{ 
                           borderRadius: 5, 
                           marginRight: 10,
-                          width: '90px',
-                          height: '90px',
+                          width: '70px',
+                          height: '70px',
                           objectFit: 'cover'
                         }}
                       />
