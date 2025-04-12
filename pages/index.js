@@ -6,17 +6,37 @@ import Layout from '@/components/layout'
 import { useRouter } from 'next/router'
 
 // Dynamically import Twemoji with no SSR
-const Twemoji = dynamic(() => import('react-twemoji'), {
+const Twemoji = dynamic(() => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      import('react-twemoji').then(module => resolve(module));
+    }, 2000); // 2 second delay
+  });
+}, {
   ssr: false,
-  loading: () => <span>...</span>
-})
+  loading: () => <Loading />
+});
 
 // Create a loading component for dynamic content
 const Loading = () => (
-  <div style={{ minHeight: '200px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-    Loading...
+  <div className="lists">
+    <div>
+      {[...Array(5)].map((_, i) => (
+        <GhostItem key={`ghost-${i}`} />
+      ))}
+    </div>
   </div>
-)
+);
+
+const GhostItem = () => (
+  <div className="listItem ghost">
+    <div className="ghost-image ghost-loading" />
+    <div className="ghost-content">
+      <div className="ghost-title ghost-loading" />
+      <div className="ghost-subtitle ghost-loading" />
+    </div>
+  </div>
+);
 
 export default function Home() {
   const [makerText, setMakerText] = useState("maker")
@@ -28,9 +48,11 @@ export default function Home() {
   const [lastGames, setLastGames] = useState([])
   const [mostGames, setMostGames] = useState([])
   const router = useRouter()
+  const [isLoading, setIsLoading] = useState(true);
 
   const getSongs = async () => {
     try {
+      setIsLoading(true);
       const res = await fetch("/api/listen")
       const data = await res.json()
       if (data.tracks?.recenttracks) {
@@ -39,38 +61,36 @@ export default function Home() {
       }
     } catch (error) {
       console.error("Error fetching songs:", error)
+    } finally {
+      setIsLoading(false);
     }
   }
 
   const getBooks = async () => {
     try {
-      const [toReadRes, readRes] = await Promise.all([
-        fetch("/api/read?type=to-read"),
-        fetch("/api/read?type=read")
-      ]);
-
-      const [toReadData, readData] = await Promise.all([
-        toReadRes.json(),
-        readRes.json()
-      ]);
-
-      setToRead(toReadData['to-read'] || []);
-      setRead(readData.read || []);
+      setIsLoading(true);
+      const res = await fetch("/api/read")
+      const data = await res.json()
+      setToRead(data.to_read)
+      setRead(data.read)
     } catch (error) {
-      console.error("Error fetching books:", error);
-      setToRead([]);
-      setRead([]);
+      console.error("Error fetching books:", error)
+    } finally {
+      setIsLoading(false);
     }
   }
 
   const getGames = async () => {
     try {
+      setIsLoading(true);
       const res = await fetch("/api/play")
       const data = await res.json()
       setLastGames(data.last_played)
       setMostGames(data.most_played)
     } catch (error) {
       console.error("Error fetching games:", error)
+    } finally {
+      setIsLoading(false);
     }
   }
 
@@ -262,31 +282,44 @@ export default function Home() {
         </div>
       </div>
 
-      {songs && songs.length !== 0 && (
+      {isLoading ? (
         <div className="lists">
-          <h4>Last listened tracks</h4>
+          <h4>Loading...</h4>
           <div>
-            {songs.map((song, i) => (
-              <a href={song.url} key={`songs${i}`} target="_blank" rel="noopener noreferrer">
-                <div className="listItem">
-                  <Image
-                    src={song.image[2]["#text"]}
-                    alt={`${song.artist["#text"]} - ${song.name}`}
-                    width={60}
-                    height={60}
-                    loading="lazy"
-                    quality={75}
-                    style={{ borderRadius: 5, marginRight: 10 }}
-                  />
-                  <div>
-                    <small>{song.album["#text"]}</small>
-                    <p>{song.artist["#text"]} - {song.name}</p>
-                  </div>
-                </div>
-              </a>
+            {[...Array(5)].map((_, i) => (
+              <GhostItem key={`ghost-${i}`} />
             ))}
           </div>
         </div>
+      ) : (
+        <>
+          {songs && songs.length !== 0 && (
+            <div className="lists">
+              <h4>Last listened tracks</h4>
+              <div>
+                {songs.map((song, i) => (
+                  <a href={song.url} key={`songs${i}`} target="_blank" rel="noopener noreferrer">
+                    <div className="listItem">
+                      <Image
+                        src={song.image[2]["#text"]}
+                        alt={`${song.artist["#text"]} - ${song.name}`}
+                        width={60}
+                        height={60}
+                        loading="lazy"
+                        quality={75}
+                        style={{ borderRadius: 5, marginRight: 10 }}
+                      />
+                      <div>
+                        <small>{song.album["#text"]}</small>
+                        <p>{song.artist["#text"]} - {song.name}</p>
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </>
       )}
     </Layout>
   )
