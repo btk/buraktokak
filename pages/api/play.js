@@ -2,15 +2,33 @@
 
 async function steamFetch(type) {
   try {
-    const response = await fetch(
-      `https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_ID}&include_appinfo=true&include_played_free_games=true&format=json`
-    );
+    if (!process.env.STEAM_API_KEY || !process.env.STEAM_ID) {
+      console.error('Missing environment variables:', {
+        hasApiKey: !!process.env.STEAM_API_KEY,
+        hasSteamId: !!process.env.STEAM_ID
+      });
+      throw new Error('Missing required environment variables');
+    }
+
+    const apiUrl = `https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_ID}&include_appinfo=true&include_played_free_games=true&format=json`;
+    console.log('Steam API URL:', apiUrl.replace(process.env.STEAM_API_KEY, 'REDACTED'));
+
+    const response = await fetch(apiUrl);
     
     if (!response.ok) {
+      console.error('Steam API error:', {
+        status: response.status,
+        statusText: response.statusText
+      });
       throw new Error(`Steam API error: ${response.status}`);
     }
 
     const data = await response.json();
+    console.log('Steam API response:', {
+      hasResponse: !!data.response,
+      hasGames: !!data.response?.games,
+      gameCount: data.response?.games?.length
+    });
     
     if (!data.response || !data.response.games) {
       throw new Error('Invalid response from Steam API');
@@ -46,6 +64,9 @@ export default async function handler(req, res) {
     res.status(200).json({ last_played, most_played });
   } catch (error) {
     console.error('Error in API handler:', error);
-    res.status(500).json({ error: 'Failed to fetch games data' });
+    res.status(500).json({ 
+      error: 'Failed to fetch games data',
+      details: error.message
+    });
   }
 }

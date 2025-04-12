@@ -172,8 +172,7 @@ export default function Home() {
     }, 5000)
 
     // Fetch data in parallel
-    Promise.all([getSongs(), getBooks()])
-    //Promise.all([getSongs(), getBooks(), getGames()])
+    Promise.all([getSongs(), getBooks(), getGames()])
 
     return () => clearInterval(interval)
   }, [])
