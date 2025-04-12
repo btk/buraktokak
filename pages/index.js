@@ -7,10 +7,11 @@ import { useRouter } from 'next/router'
 
 // Dynamically import Twemoji with no SSR
 const Twemoji = dynamic(() => {
+  const delay = process.env.NODE_ENV === 'development' ? 2000 : 100;
   return new Promise(resolve => {
     setTimeout(() => {
       import('react-twemoji').then(module => resolve(module));
-    }, 2000); // 2 second delay
+    }, delay);
   });
 }, {
   ssr: false,
