@@ -4,6 +4,7 @@ import Image from 'next/image'
 import SEO from '@/components/SEO'
 import Layout from '@/components/layout'
 import { useRouter } from 'next/router'
+import apiCache from '../lib/api-cache'
 
 // Dynamically import Twemoji with no SSR
 const Twemoji = dynamic(() => {
@@ -52,6 +53,50 @@ export default function Home() {
   const [isSongsLoading, setIsSongsLoading] = useState(true)
   const [isBooksLoading, setIsBooksLoading] = useState(true)
   const [isGamesLoading, setIsGamesLoading] = useState(true)
+  const [isTwemojiLoaded, setIsTwemojiLoaded] = useState(false)
+
+  // Load cached data immediately in development
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'development') {
+      // Safely access and set songs
+      if (apiCache?.listen?.tracks?.recenttracks?.track) {
+        setSongs(apiCache.listen.tracks.recenttracks.track);
+      }
+      
+      // Safely access and set albums
+      if (apiCache?.listen?.albums?.topalbums?.album) {
+        setAlbums(apiCache.listen.albums.topalbums.album);
+      }
+      
+      // Safely access and set books
+      if (apiCache?.read?.to_read) {
+        setToRead(apiCache.read.to_read);
+      }
+      if (apiCache?.read?.read) {
+        setRead(apiCache.read.read);
+      }
+      
+      // Safely access and set games
+      if (apiCache?.play?.last_played) {
+        setLastGames(apiCache.play.last_played);
+      }
+      if (apiCache?.play?.most_played) {
+        setMostGames(apiCache.play.most_played);
+      }
+      
+      // Update loading states
+      setIsSongsLoading(false);
+      setIsBooksLoading(false);
+      setIsGamesLoading(false);
+    }
+  }, []);
+
+  // Load Twemoji after initial render
+  useEffect(() => {
+    import('react-twemoji').then(() => {
+      setIsTwemojiLoaded(true);
+    });
+  }, []);
 
   const getSongs = async () => {
     try {
@@ -164,7 +209,7 @@ export default function Home() {
           </div>
         )}
       </div>
-
+      
       <Suspense fallback={<Loading />}>
         <Twemoji options={{ className: 'twemoji', base: 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/' }}>
           <div className="making">
@@ -356,7 +401,7 @@ export default function Home() {
                       />
                       <div>
                         <small style={{ textTransform: "uppercase" }}>{album.artist.name}</small>
-                        <p>{album.name} - <span style={{ opacity: 0.4, fontWeight: "normal" }}>{album.playcount} Listens</span></p>
+                        <p>{album.name} - <span style={{ opacity: 0.5, fontWeight: "normal" }}>{album.playcount} Listens</span></p>
                       </div>
                     </div>
                   </a>
@@ -481,8 +526,8 @@ export default function Home() {
                     }}
                   />
                   <div>
-                    <small>Recently Played</small>
-                    <p>{game.name}</p>
+                    <small style={{ textTransform: "uppercase" }}>{game.name}</small>
+                    <p style={{ opacity: 0.5 }}>Last played</p>
                   </div>
                 </div>
               </a>
@@ -506,8 +551,8 @@ export default function Home() {
                     }}
                   />
                   <div>
-                    <small>Most Played</small>
-                    <p>{game.name}</p>
+                    <small style={{ textTransform: "uppercase" }}>{game.name}</small>
+                    <p style={{ opacity: 0.5 }}>Most played</p>
                   </div>
                 </div>
               </a>
