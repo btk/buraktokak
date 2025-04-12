@@ -298,31 +298,61 @@ export default function Home() {
             ))}
           </div>
         </div>
-      ) : songs && songs.length !== 0 && (
-        <div className="lists">
-          <h4>Last listened tracks</h4>
-          <div>
-            {songs.map((song, i) => (
-              <a href={song.url} key={`songs${i}`} target="_blank" rel="noopener noreferrer">
-                <div className="listItem">
-                  <Image
-                    src={song.image[2]["#text"]}
-                    alt={`${song.artist["#text"]} - ${song.name}`}
-                    width={60}
-                    height={60}
-                    loading="lazy"
-                    quality={75}
-                    style={{ borderRadius: 5, marginRight: 10 }}
-                  />
-                  <div>
-                    <small>{song.album["#text"]}</small>
-                    <p>{song.artist["#text"]} - {song.name}</p>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
+      ) : (
+        <>
+          {songs && songs.length !== 0 && (
+            <div className="lists">
+              <h4>Last listened tracks</h4>
+              <div>
+                {songs.map((song, i) => (
+                  <a href={song.url} key={`songs${i}`} target="_blank" rel="noopener noreferrer">
+                    <div className="listItem">
+                      <Image
+                        src={song.image[2]["#text"]}
+                        alt={`${song.artist["#text"]} - ${song.name}`}
+                        width={60}
+                        height={60}
+                        loading="lazy"
+                        quality={75}
+                        style={{ borderRadius: 5, marginRight: 10 }}
+                      />
+                      <div>
+                        <small>{song.album["#text"]}</small>
+                        <p>{song.artist["#text"]} - {song.name}</p>
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+          {albums && albums.length !== 0 && (
+            <div className="lists">
+              <h4>Most listened albums</h4>
+              <div>
+                {albums.map((album, i) => (
+                  <a href={album.url} key={`albums${i}`} target="_blank" rel="noopener noreferrer">
+                    <div className="listItem">
+                      <Image
+                        src={album.image[2]["#text"]}
+                        alt={`${album.artist.name} - ${album.name}`}
+                        width={60}
+                        height={60}
+                        loading="lazy"
+                        quality={75}
+                        style={{ borderRadius: 5, marginRight: 10 }}
+                      />
+                      <div>
+                        <small style={{ textTransform: "uppercase" }}>{album.artist.name}</small>
+                        <p>{album.name} - <span style={{ opacity: 0.4, fontWeight: "normal" }}>{album.playcount} Listens</span></p>
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </>
       )}
 
       {isBooksLoading ? (
@@ -334,50 +364,61 @@ export default function Home() {
             ))}
           </div>
         </div>
-      ) : (Array.isArray(toRead) && Array.isArray(read) && (toRead.length > 0 || read.length > 0)) && (
-        <div className="lists">
-          <h4>Books</h4>
-          <div>
-            {toRead?.map((book, i) => (
-              <a href={book.url} key={`toRead${i}`} target="_blank" rel="noopener noreferrer">
-                <div className="listItem">
-                  <Image
-                    src={book.cover}
-                    alt={`${book.title} by ${book.author}`}
-                    width={60}
-                    height={60}
-                    loading="lazy"
-                    quality={75}
-                    style={{ borderRadius: 5, marginRight: 10 }}
-                  />
-                  <div>
-                    <small>To Read</small>
-                    <p>{book.title} - {book.author}</p>
-                  </div>
-                </div>
-              </a>
-            ))}
-            {read?.map((book, i) => (
-              <a href={book.url} key={`read${i}`} target="_blank" rel="noopener noreferrer">
-                <div className="listItem">
-                  <Image
-                    src={book.cover}
-                    alt={`${book.title} by ${book.author}`}
-                    width={60}
-                    height={60}
-                    loading="lazy"
-                    quality={75}
-                    style={{ borderRadius: 5, marginRight: 10 }}
-                  />
-                  <div>
-                    <small>Read</small>
-                    <p>{book.title} - {book.author}</p>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
+      ) : (
+        <>
+          {read && read.length > 0 && (
+            <div className="lists">
+              <h4>Last read</h4>
+              <div>
+                {read.map((book, i) => (
+                  <a href={book.url} key={`read${i}`} target="_blank" rel="noopener noreferrer">
+                    <div className="listItem">
+                      <Image
+                        src={book.cover}
+                        alt={`${book.title} by ${book.author}`}
+                        width={60}
+                        height={90}
+                        style={{ borderRadius: 5, marginRight: 10 }}
+                      />
+                      <div>
+                        <small style={{ textTransform: "uppercase" }}>
+                          {book.author.split(", ")[1] + " " + book.author.split(", ")[0]}
+                        </small>
+                        <p>{book.title}</p>
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+          {toRead && toRead.length > 0 && (
+            <div className="lists">
+              <h4>Will read</h4>
+              <div>
+                {toRead.map((book, i) => (
+                  <a href={book.url} key={`toRead${i}`} target="_blank" rel="noopener noreferrer">
+                    <div className="listItem">
+                      <Image
+                        src={book.cover}
+                        alt={`${book.title} by ${book.author}`}
+                        width={60}
+                        height={90}
+                        style={{ borderRadius: 5, marginRight: 10 }}
+                      />
+                      <div>
+                        <small style={{ textTransform: "uppercase" }}>
+                          {book.author.split(", ")[1] + " " + book.author.split(", ")[0]}
+                        </small>
+                        <p>{book.title}</p>
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </>
       )}
 
       {isGamesLoading ? (
