@@ -219,14 +219,14 @@ export default function Home() {
               <li>Working for 🦆 <a href="http://rogueduck.net/" target="_blank" rel="noopener noreferrer"><b>Rogue Duck Interactive</b></a>, <span>making & publishing indie strategy pc games</span></li>
               <li>Making    🥽 <a href="https://vrux.co/" target="_blank" rel="noopener noreferrer"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
               <li>Making 📐 <a href="https://sitemanifest.dev/" target="_blank" rel="noopener noreferrer"><b>sitemanifest.dev</b></a>, <span>a tool that helps you generate site manifests</span></li>
+              <li>Publishing 👑 <a href="https://store.steampowered.com/app/2655590/Kingdoms_Deck/" target="_blank" rel="noopener noreferrer"><b>Kingdom's Deck</b></a>, <span>a kingdom builder & defense pc game on Steam</span></li>
+              <li>Making 🚚 <a href="https://store.steampowered.com/app/3496000/Ship_Inc/" target="_blank" rel="noopener noreferrer"><b>Ship, Inc.</b></a>, <span>a parcel packaging PC game on Steam</span></li>
               <li>Making 🚢 <a href="https://store.steampowered.com/app/2755950/Tidebound/" target="_blank" rel="noopener noreferrer"><b>Tidebound</b></a>, <span>a fishing & inventory management game</span></li>
               <li>Making 🗂 <a href="https://store.steampowered.com/app/3415240/Cozy_Organizer/" target="_blank" rel="noopener noreferrer"><b>Cozy Organizer</b></a>, <span>an item organization game on Steam</span></li>
-              <li>Making 🚚 <a href="https://store.steampowered.com/app/3496000/Ship_Inc/" target="_blank" rel="noopener noreferrer"><b>Ship, Inc.</b></a>, <span>a parcel packaging PC game on Steam</span></li>
               <li>Publishing 🔮 <a href="https://store.steampowered.com/app/3415230/Witchy_Business/" target="_blank" rel="noopener noreferrer"><b>Witchy Business</b></a>, <span>a witch job-simulator game on Steam</span></li>
-              <li>Publishing 👑 <a href="https://store.steampowered.com/app/2655590/Kingdoms_Deck/" target="_blank" rel="noopener noreferrer"><b>Kingdom's Deck</b></a>, <span>a kingdom builder & defense pc game on Steam</span></li>
-              <li>Publishing 👽 <a href="https://store.steampowered.com/app/2449450/Clonizer/" target="_blank" rel="noopener noreferrer"><b>Clonizer</b></a>, <span>a hex based roguelike deckbuilder pc game on Steam</span></li>
               <li>Publishing 🎯 <a href="https://store.steampowered.com/app/3301530/Boogey_Hunters/" target="_blank" rel="noopener noreferrer"><b>Boogey Hunters</b></a>, <span>an ammo-building roguelike pc game on Steam</span></li>
               <li>Publishing 🎨 <a href="https://store.steampowered.com/app/3454660/Color_Factory_Automation_Meets_Canvas/" target="_blank" rel="noopener noreferrer"><b>Color Factory</b></a>, <span>a relaxing factory-building game on Steam</span></li>
+              <li>Publishing 🔑 <a href="https://store.steampowered.com/app/3546440/Rentlord/" target="_blank" rel="noopener noreferrer"><b>Rentlord</b></a>, <span>a balatro-style property management simulation game on Steam</span></li>
               <li>Publishing ⚽ <a href="https://store.steampowered.com/app/3241940/Regista_Reign_Your_Football_Club/" target="_blank" rel="noopener noreferrer"><b>Regista</b></a>, <span>a football themed choose your own adventure game on Steam</span></li>
               <li>Publishing 🚚 <a href="https://store.steampowered.com/app/3521410/Cats__Cups/" target="_blank" rel="noopener noreferrer"><b>Cats & Cups</b></a>, <span>a 2d barista sim PC game on Steam</span></li>
             </ul>
@@ -239,6 +239,8 @@ export default function Home() {
           <div className="made">
             <h3>Past</h3>
             <ul>
+              <li>Published 👽 <a href="https://store.steampowered.com/app/2449450/Clonizer/" target="_blank" rel="noopener noreferrer"><b>Clonizer</b></a>, <span>a hex based roguelike deckbuilder pc game on Steam</span></li>
+              <li>Made 🧴 <a href="https://fragrancelist.net" target="_blank" rel="noopener noreferrer"><b>Fragrance List</b></a>, <span>a directory of fragrances and their accords</span></li>
               <li>Made 🫠 <a href="https://meltingface.org/" target="_blank" rel="noopener noreferrer"><b>Melting Face</b></a>, <span>a tool that generates branding & interface vibe with AI</span></li>
               <li>Made 🤘 <a href="https://metalmap.vercel.app/" target="_blank" rel="noopener noreferrer"><b>Metal Map</b></a>, <span>a map of well-known metal bands by their origin</span></li>
               <li>Founded & Worked for 💙 <a href="https://dreamoriented.org/" target="_blank" rel="noopener noreferrer"><b>Dream Oriented</b></a>, <span>created developer tooling for almost a decade</span></li>
@@ -291,6 +293,7 @@ export default function Home() {
               <li>Co-made 🃏 <a href="https://assistivecards.com/" target="_blank" rel="noopener noreferrer"><b>Assistive Cards Listing</b></a>, <span>a library of assistive cards in 37 languages</span></li>
               <li>Helped Release 🐎 <a href="https://stratera.co/game/ride-to-victory/" target="_blank" rel="noopener noreferrer"><b>Ride to Victory</b></a>, <span>a Battle of Ankara inspired endless 3D runner game</span></li>
               <li>Made 🦙 <a href="https://assistivecards.com/huni" target="_blank" rel="noopener noreferrer"><b>Huni AI</b></a>, <span>a mobile speech therapy app with voice recognition</span></li>
+              <li>Made 🧴 <a href="https://fragrancelist.net" target="_blank" rel="noopener noreferrer"><b>Fragrance List</b></a>, <span>a directory of fragrances and their notes</span></li>
               <li>Made ‍💨 <a href="https://speedrun.xyz" target="_blank" rel="noopener noreferrer"><b>speedrun.xyz</b></a>, <span>live timeline of record speedruns for games</span></li>
               <li>Helped Release 🏃‍♂️ <a href="https://stratera.co/game/viralfirar" target="_blank" rel="noopener noreferrer"><b>Virar Firar</b></a>, <span>an arcade runner game with ft. 5 influencers</span></li>
               <li>Designed 🔰 <a href="https://stratera.co/" target="_blank" rel="noopener noreferrer"><b>Stratera.co</b></a>, <span>a website for the company</span></li>
