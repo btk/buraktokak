@@ -256,7 +256,7 @@ export default function Home() {
               <li>Co-Made 🎲 <a href="https://store.steampowered.com/app/2693930/Dice__Fold/" target="_blank" rel="noopener noreferrer"><b>Dice & Fold</b></a>, <span>a card & dice based dungeon crawler with a twist</span></li>
               <li>Made 📃 <a href="https://fluent1.vercel.app/" target="_blank" rel="noopener noreferrer"><b>fluent.</b></a>, <span>a tool that gives you crafted paragraphs to train your pronunciation</span></li>
               <li>Co-Made ‍🪐 <a href="https://store.steampowered.com/app/2628570/Stellar_Settlers/" target="_blank" rel="noopener noreferrer"><b>Stellar Settlers</b></a>, <span>a PC space colony sim & city building game</span></li>
-              <li>Made 💬 <a href="https://steamreview.vercel.app/" target="_blank" rel="noopener noreferrer"><b>Steam Review Analyzer</b></a>, <span>an nlp tool for analyzing game reviews on steam</span></li>
+              <li>Made 💬 <a href="https://steamreviewanalyzer.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>Steam Review Analyzer</b></a>, <span>an nlp tool for analyzing game reviews on steam</span></li>
               <li>Co-Founded & Worked for 🔰 <a href="https://stratera.co/" target="_blank" rel="noopener noreferrer"><b>Stratera Games</b></a>, <span>making fun indie games, 5-ish years</span></li>
               <li>Made 🐳 <a href="https://easylogo.dev/" target="_blank" rel="noopener noreferrer"><b>EasyLogo</b></a>, <span>a tool that helps you design easy and fast logos</span></li>
               <li>Made ⚗️ <a href="https://sciencefigures.org/" target="_blank" rel="noopener noreferrer"><b>Science Figures</b></a>, <span>a searchable directory of open licensed science figures</span></li>
