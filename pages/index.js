@@ -218,15 +218,10 @@ export default function Home() {
             <ul>
               <li>Working for 🦆 <a href="http://rogueduck.net/" target="_blank" rel="noopener noreferrer"><b>Rogue Duck Interactive</b></a>, <span>making & publishing indie strategy pc games</span></li>
               <li>Making    🥽 <a href="https://vrux.co/" target="_blank" rel="noopener noreferrer"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
-              <li>Making 🚚 <a href="https://store.steampowered.com/app/3496000/Ship_Inc/" target="_blank" rel="noopener noreferrer"><b>Ship, Inc.</b></a>, <span>a parcel packaging PC game on Steam</span></li>
               <li>Making 🚢 <a href="https://store.steampowered.com/app/2755950/Tidebound/" target="_blank" rel="noopener noreferrer"><b>Tidebound</b></a>, <span>a fishing & inventory management game</span></li>
               <li>Making 🗂 <a href="https://store.steampowered.com/app/3415240/Cozy_Organizer/" target="_blank" rel="noopener noreferrer"><b>Cozy Organizer</b></a>, <span>an item organization game on Steam</span></li>
               <li>Publishing 🔮 <a href="https://store.steampowered.com/app/3415230/Witchy_Business/" target="_blank" rel="noopener noreferrer"><b>Witchy Business</b></a>, <span>a witch job-simulator game on Steam</span></li>
-              <li>Publishing 🎯 <a href="https://store.steampowered.com/app/3301530/Boogey_Hunters/" target="_blank" rel="noopener noreferrer"><b>Boogey Hunters</b></a>, <span>an ammo-building roguelike pc game on Steam</span></li>
-              <li>Publishing 🎨 <a href="https://store.steampowered.com/app/3454660/Color_Factory_Automation_Meets_Canvas/" target="_blank" rel="noopener noreferrer"><b>Color Factory</b></a>, <span>a relaxing factory-building game on Steam</span></li>
-              <li>Publishing 🔑 <a href="https://store.steampowered.com/app/3546440/Rentlord/" target="_blank" rel="noopener noreferrer"><b>Rentlord</b></a>, <span>a balatro-style property management simulation game on Steam</span></li>
-              <li>Publishing ⚽ <a href="https://store.steampowered.com/app/3241940/Regista_Reign_Your_Football_Club/" target="_blank" rel="noopener noreferrer"><b>Regista</b></a>, <span>a football themed choose your own adventure game on Steam</span></li>
-              <li>Publishing 🚚 <a href="https://store.steampowered.com/app/3521410/Cats__Cups/" target="_blank" rel="noopener noreferrer"><b>Cats & Cups</b></a>, <span>a 2d barista sim PC game on Steam</span></li>
+              <li>Publishing 🐱 <a href="https://store.steampowered.com/app/3521410/Cats__Cups/" target="_blank" rel="noopener noreferrer"><b>Cats & Cups</b></a>, <span>a 2d barista sim PC game on Steam</span></li>
               <li>Making 🧩 <a href="https://learnai.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>LearnAI</b></a>, <span>a platform that turns learning into a game with quizzes and mini-games</span></li>
             </ul>
           </div>
@@ -238,6 +233,11 @@ export default function Home() {
           <div className="made">
             <h3>Past</h3>
             <ul>
+              <li>Made 🚚 <a href="https://store.steampowered.com/app/3496000/Ship_Inc/" target="_blank" rel="noopener noreferrer"><b>Ship, Inc.</b></a>, <span>a parcel packaging PC game on Steam</span></li>
+              <li>Published 🎨 <a href="https://store.steampowered.com/app/3454660/Color_Factory_Automation_Meets_Canvas/" target="_blank" rel="noopener noreferrer"><b>Color Factory</b></a>, <span>a relaxing factory-building game on Steam</span></li>
+              <li>Published 🔑 <a href="https://store.steampowered.com/app/3546440/Rentlord/" target="_blank" rel="noopener noreferrer"><b>Rentlord</b></a>, <span>a balatro-style property management simulation game on Steam</span></li>
+              <li>Published 🎯 <a href="https://store.steampowered.com/app/3301530/Boogey_Hunters/" target="_blank" rel="noopener noreferrer"><b>Boogey Hunters</b></a>, <span>an ammo-building roguelike pc game on Steam</span></li>
+              <li>Published ⚽ <a href="https://store.steampowered.com/app/3241940/Regista_Reign_Your_Football_Club/" target="_blank" rel="noopener noreferrer"><b>Regista</b></a>, <span>a football themed choose your own adventure game on Steam</span></li>
               <li>Made 📄 <a href="https://onepager.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>One Pager</b></a>, <span>a tool that helps you create concise and effective GDDs</span></li>
               <li>Published 👑 <a href="https://store.steampowered.com/app/2655590/Kingdoms_Deck/" target="_blank" rel="noopener noreferrer"><b>Kingdom's Deck</b></a>, <span>a kingdom builder & defense pc game on Steam</span></li>
               <li>Made 📐 <a href="https://sitemanifest.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>sitemanifest</b></a>, <span>a tool that helps you generate site manifests</span></li>
