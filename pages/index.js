@@ -233,6 +233,7 @@ export default function Home() {
           <div className="made">
             <h3>Past</h3>
             <ul>
+              <li>Made 📊 <a href="https://steam-regional-charts.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>Steam Regional Charts</b></a>, <span>a tool to browse new & trending games in different regions on Steam</span></li>
               <li>Made 🚚 <a href="https://store.steampowered.com/app/3496000/Ship_Inc/" target="_blank" rel="noopener noreferrer"><b>Ship, Inc.</b></a>, <span>a parcel packaging PC game on Steam</span></li>
               <li>Published 🎨 <a href="https://store.steampowered.com/app/3454660/Color_Factory_Automation_Meets_Canvas/" target="_blank" rel="noopener noreferrer"><b>Color Factory</b></a>, <span>a relaxing factory-building game on Steam</span></li>
               <li>Published 🔑 <a href="https://store.steampowered.com/app/3546440/Rentlord/" target="_blank" rel="noopener noreferrer"><b>Rentlord</b></a>, <span>a balatro-style property management simulation game on Steam</span></li>
