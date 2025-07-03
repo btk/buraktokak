@@ -216,7 +216,7 @@ export default function Home() {
           <div className="making">
             <h3>Currently</h3>
             <ul>
-              <li>Working for 🦆 <a href="http://rogueduck.net/" target="_blank" rel="noopener noreferrer"><b>Rogue Duck Interactive</b></a>, <span>making & publishing indie strategy pc games</span></li>
+              <li>Working for 🦆 <a href="http://rogueduck.net/" target="_blank" rel="noopener noreferrer"><b>Rogue Duck Interactive</b></a>, <span>making & publishing indie strategy & sim games</span></li>
               <li>Making    🥽 <a href="https://vrux.co/" target="_blank" rel="noopener noreferrer"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
               <li>Making 🚢 <a href="https://store.steampowered.com/app/2755950/Tidebound/" target="_blank" rel="noopener noreferrer"><b>Tidebound</b></a>, <span>a fishing & inventory management game</span></li>
               <li>Making 🗂 <a href="https://store.steampowered.com/app/3415240/Cozy_Organizer/" target="_blank" rel="noopener noreferrer"><b>Cozy Organizer</b></a>, <span>an item organization game on Steam</span></li>
