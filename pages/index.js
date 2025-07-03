@@ -222,6 +222,11 @@ export default function Home() {
               <li>Making 🗂 <a href="https://store.steampowered.com/app/3415240/Cozy_Organizer/" target="_blank" rel="noopener noreferrer"><b>Cozy Organizer</b></a>, <span>an item organization game on Steam</span></li>
               <li>Publishing 🔮 <a href="https://store.steampowered.com/app/3415230/Witchy_Business/" target="_blank" rel="noopener noreferrer"><b>Witchy Business</b></a>, <span>a witch job-simulator game on Steam</span></li>
               <li>Publishing 🐱 <a href="https://store.steampowered.com/app/3521410/Cats__Cups/" target="_blank" rel="noopener noreferrer"><b>Cats & Cups</b></a>, <span>a 2d barista sim PC game on Steam</span></li>
+              <li>Publishing 🎮 <a href="https://store.steampowered.com/app/3683940/Replay_Value_Second_Hand_Games/" target="_blank" rel="noopener noreferrer"><b>Replay Value</b></a>, <span>a job simulator where you run a second-hand game store on Steam</span></li>
+              <li>Publishing 💌 <a href="https://store.steampowered.com/app/3771390/Carefully_Stamped/" target="_blank" rel="noopener noreferrer"><b>Carefully Stamped</b></a>, <span>a cozy postcard-making sandbox game on Steam</span></li>
+              <li>Making 🏪 <a href="https://store.steampowered.com/app/3622640/Vending_Machine_Co/" target="_blank" rel="noopener noreferrer"><b>Vending Machine Co.</b></a>, <span>a cozy vending machine business simulator</span></li>
+              <li>Publishing 🌍 <a href="https://store.steampowered.com/app/3678350/As_We_Unite/" target="_blank" rel="noopener noreferrer"><b>As We Unite</b></a>, <span>a political strategy simulation about cult management game</span></li>
+              <li>Publishing ⚔️ <a href="https://store.steampowered.com/app/3702540/Between_Adventures_IDLE/" target="_blank" rel="noopener noreferrer"><b>Between Adventures IDLE</b></a>, <span>an idle RPG strategy game</span></li>
               <li>Making 🧩 <a href="https://learnai.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>LearnAI</b></a>, <span>a platform that turns learning into a game with quizzes and mini-games</span></li>
             </ul>
           </div>
@@ -233,6 +238,7 @@ export default function Home() {
           <div className="made">
             <h3>Past</h3>
             <ul>
+              <li>Made 🐋 <a href="https://www.steampeek.net/" target="_blank" rel="noopener noreferrer"><b>steampeek</b></a>, <span>a Steam market intelligence platform for game developers</span></li>
               <li>Made 📊 <a href="https://steam-regional-charts.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>Steam Regional Charts</b></a>, <span>a tool to browse new & trending games in different regions on Steam</span></li>
               <li>Made 🚚 <a href="https://store.steampowered.com/app/3496000/Ship_Inc/" target="_blank" rel="noopener noreferrer"><b>Ship, Inc.</b></a>, <span>a parcel packaging PC game on Steam</span></li>
               <li>Published 🎨 <a href="https://store.steampowered.com/app/3454660/Color_Factory_Automation_Meets_Canvas/" target="_blank" rel="noopener noreferrer"><b>Color Factory</b></a>, <span>a relaxing factory-building game on Steam</span></li>
