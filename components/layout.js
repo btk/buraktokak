@@ -1,8 +1,10 @@
 import React from "react"
+import ThemeToggle from "./ThemeToggle"
 
 const Layout = ({ children }) => {
   return (
     <>
+      <ThemeToggle />
       <div
         style={{
           margin: `0 auto`,

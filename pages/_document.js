@@ -11,6 +11,23 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function() {
+                  try {
+                    var theme = localStorage.getItem('theme');
+                    if (!theme) {
+                      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                      theme = prefersDark ? 'dark' : 'light';
+                      localStorage.setItem('theme', theme);
+                    }
+                    document.documentElement.setAttribute('data-theme', theme);
+                  } catch (e) {}
+                })();
+              `,
+            }}
+          />
         </Head>
         <body>
           <Main />
