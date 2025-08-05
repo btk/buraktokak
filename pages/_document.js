@@ -11,6 +11,15 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          <style
+            dangerouslySetInnerHTML={{
+              __html: `
+                /* Prevent flash by hiding content until theme is loaded */
+                body { visibility: hidden; }
+                body.theme-loaded { visibility: visible; }
+              `,
+            }}
+          />
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -23,12 +32,19 @@ class MyDocument extends Document {
                       localStorage.setItem('theme', theme);
                     }
                     document.documentElement.setAttribute('data-theme', theme);
-                    // Add theme-loaded class after a brief delay to prevent flash
-                    setTimeout(function() {
-                      document.body.classList.add('theme-loaded');
-                    }, 10);
-                  } catch (e) {}
+                    
+                    // Add theme-loaded class to show content
+                    document.body.classList.add('theme-loaded');
+                  } catch (e) {
+                    // Fallback: show content even if theme detection fails
+                    document.body.classList.add('theme-loaded');
+                  }
                 })();
+                
+                // Fallback: ensure content is visible after 100ms
+                setTimeout(function() {
+                  document.body.classList.add('theme-loaded');
+                }, 100);
               `,
             }}
           />

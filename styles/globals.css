@@ -37,6 +37,8 @@ body {
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  /* Ensure smooth visibility transition */
+  transition: visibility 0s;
 }
 
 /* Only apply transitions after theme is loaded */
