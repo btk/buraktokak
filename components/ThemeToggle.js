@@ -13,6 +13,8 @@ const ThemeToggle = () => {
     }
     setTheme(savedTheme)
     document.documentElement.setAttribute('data-theme', savedTheme)
+    // Add theme-loaded class to enable transitions
+    document.body.classList.add('theme-loaded')
   }, [])
 
   const toggleTheme = () => {
@@ -20,6 +22,8 @@ const ThemeToggle = () => {
     setTheme(newTheme)
     localStorage.setItem('theme', newTheme)
     document.documentElement.setAttribute('data-theme', newTheme)
+    // Ensure theme-loaded class is present for smooth transitions
+    document.body.classList.add('theme-loaded')
   }
 
   return (

@@ -37,6 +37,10 @@ body {
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
+}
+
+/* Only apply transitions after theme is loaded */
+body.theme-loaded {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 article,

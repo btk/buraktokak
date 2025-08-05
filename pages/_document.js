@@ -23,6 +23,10 @@ class MyDocument extends Document {
                       localStorage.setItem('theme', theme);
                     }
                     document.documentElement.setAttribute('data-theme', theme);
+                    // Add theme-loaded class after a brief delay to prevent flash
+                    setTimeout(function() {
+                      document.body.classList.add('theme-loaded');
+                    }, 10);
                   } catch (e) {}
                 })();
               `,
