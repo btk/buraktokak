@@ -720,6 +720,11 @@ pre tt:after {
   margin: 20px 0px;
   padding-top: 30px;
 }
+
+/* Make sure height transition is enabled */
+.tags.collapsible {
+  transition-property: height, opacity, transform, margin, padding;
+}
 .tags.collapsible > div {
   pointer-events: none;
 }

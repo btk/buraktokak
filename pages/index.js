@@ -64,10 +64,9 @@ export default function Home() {
     el.style.height = '0px'
     // measure target height
     const target = el.scrollHeight
-    // animate to target height
-    requestAnimationFrame(() => {
-      el.style.height = target + 'px'
-    })
+    // force reflow then animate to target height
+    void el.offsetHeight
+    el.style.height = target + 'px'
     const onEnd = (e) => {
       if (e.propertyName !== 'height') return
       // keep auto height after opening so content is fully visible
@@ -84,11 +83,10 @@ export default function Home() {
     // set explicit current height before collapsing
     const current = el.scrollHeight
     el.style.height = current + 'px'
-    // allow style to apply
-    requestAnimationFrame(() => {
-      el.classList.remove('open')
-      el.style.height = '0px'
-    })
+    // force reflow then collapse
+    void el.offsetHeight
+    el.classList.remove('open')
+    el.style.height = '0px'
     const onEnd = (e) => {
       if (e.propertyName !== 'height') return
       el.style.height = ''
