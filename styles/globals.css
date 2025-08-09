@@ -719,6 +719,7 @@ pre tt:after {
 
 /* Make sure height transition is enabled */
 .tags.collapsible {
+  margin-left: 5px;
   transition-property: height, opacity, transform, margin, padding;
 }
 .tags.collapsible > div {
@@ -748,7 +749,7 @@ pre tt:after {
 .tags.collapsible.open span:nth-child(8) { transition-delay: 240ms; }
 
 /* Ensure inner content doesn't affect measured height mid-transition */
-.tags-content { padding-top: 20px; padding-bottom: 10px; }
+.tags-content { padding-top: 20px; padding-bottom: 15px; }
 
 
 .contact {
