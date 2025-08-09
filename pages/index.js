@@ -70,7 +70,8 @@ export default function Home() {
     })
     const onEnd = (e) => {
       if (e.propertyName !== 'height') return
-      el.style.height = ''
+      // keep auto height after opening so content is fully visible
+      el.style.height = 'auto'
       el.removeEventListener('transitionend', onEnd)
     }
     el.addEventListener('transitionend', onEnd)
