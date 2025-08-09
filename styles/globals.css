@@ -704,20 +704,18 @@ pre tt:after {
   height: 0; /* JS animates this for smooth close/open */
   opacity: 0;
   transform: translateY(-6px);
-  margin: 0;
+  margin: 0; /* keep constant to avoid layout jump */
   padding-top: 0;
   will-change: height, opacity, transform, margin, padding;
   transition:
     height 520ms cubic-bezier(0.22, 1, 0.36, 1),
     opacity 360ms ease-out,
     transform 520ms cubic-bezier(0.22, 1, 0.36, 1),
-    margin 520ms ease,
     padding 520ms ease;
 }
 .tags.collapsible.open {
   opacity: 1;
   transform: translateY(0);
-  margin: 20px 0px;
   padding-top: 30px;
 }
 

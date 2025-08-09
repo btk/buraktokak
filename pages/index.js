@@ -62,11 +62,14 @@ export default function Home() {
     // ensure starting state
     el.classList.add('open')
     el.style.height = '0px'
+    // also animate padding for smoother reveal without jump
+    el.style.paddingTop = '0px'
     // measure target height
     const target = el.scrollHeight
     // force reflow then animate to target height
     void el.offsetHeight
     el.style.height = target + 'px'
+    el.style.paddingTop = '30px'
     const onEnd = (e) => {
       if (e.propertyName !== 'height') return
       // keep auto height after opening so content is fully visible
@@ -83,10 +86,12 @@ export default function Home() {
     // set explicit current height before collapsing
     const current = el.scrollHeight
     el.style.height = current + 'px'
+    el.style.paddingTop = '30px'
     // force reflow then collapse
     void el.offsetHeight
     el.classList.remove('open')
     el.style.height = '0px'
+    el.style.paddingTop = '0px'
     const onEnd = (e) => {
       if (e.propertyName !== 'height') return
       el.style.height = ''
