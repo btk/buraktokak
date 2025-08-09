@@ -191,7 +191,18 @@ export default function Home() {
           Making useful and sometimes silly things.
         </p>
         <h2 style={{ display: 'none' }}>Digital Product Portfolio</h2>
-        <div className="contact" onClick={() => setTopics(!topics)}>
+        <div
+          className="contact"
+          onClick={(e) => {
+            // trigger CSS click animation
+            e.currentTarget.classList.remove('clicked')
+            // force reflow to restart animation if rapidly clicked
+            void e.currentTarget.offsetWidth
+            e.currentTarget.classList.add('clicked')
+            // preserve existing logic
+            setTopics(!topics)
+          }}
+        >
           {topics ? <span>👇 Choose a topic below</span> : <span>💭 Get in touch with me</span>}
         </div>
         {topics && (
