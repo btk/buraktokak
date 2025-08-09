@@ -698,6 +698,30 @@ pre tt:after {
   transition: background-color 0.3s ease;
 }
 
+/* Animated expand/collapse for contact topics */
+.tags.collapsible {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-6px);
+  margin: 0;
+  padding-top: 0;
+  transition: max-height 300ms ease, opacity 220ms ease, transform 300ms ease, margin 300ms ease, padding 300ms ease;
+}
+.tags.collapsible.open {
+  max-height: 520px; /* large enough to show content */
+  opacity: 1;
+  transform: translateY(0);
+  margin: 20px 0px;
+  padding-top: 30px;
+}
+.tags.collapsible > div {
+  pointer-events: none;
+}
+.tags.collapsible.open > div {
+  pointer-events: auto;
+}
+
 
 .contact {
   width: 250px;

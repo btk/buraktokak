@@ -205,21 +205,19 @@ export default function Home() {
         >
           {topics ? <span>👇 Choose a topic below</span> : <span>💭 Get in touch with me</span>}
         </div>
-        {topics && (
-          <div className="tags" style={{ marginTop: 0 }}>
-            <div onClick={() => setTopics(false)}>
-              <a href="mailto:info@buraktokak.com?subject=[Work] Hi, Burak&body=I want to get in touch with you about work related stuff...">
-                <span>💼 Work</span>
-              </a>
-              <a href="mailto:info@buraktokak.com?subject=[Personal] Hi, Burak&body=I want to get in touch with you about personal stuff...">
-                <span>🙏 Personal</span>
-              </a>
-              <a href="mailto:info@buraktokak.com?subject=[Other] Hi, Burak&body=I want to get in touch with you about other stuff...">
-                <span>🍂 Other</span>
-              </a>
-            </div>
+        <div className={`tags collapsible ${topics ? 'open' : ''}`} style={{ marginTop: 0 }}>
+          <div onClick={() => setTopics(false)}>
+            <a href="mailto:info@buraktokak.com?subject=[Work] Hi, Burak&body=I want to get in touch with you about work related stuff...">
+              <span>💼 Work</span>
+            </a>
+            <a href="mailto:info@buraktokak.com?subject=[Personal] Hi, Burak&body=I want to get in touch with you about personal stuff...">
+              <span>🙏 Personal</span>
+            </a>
+            <a href="mailto:info@buraktokak.com?subject=[Other] Hi, Burak&body=I want to get in touch with you about other stuff...">
+              <span>🍂 Other</span>
+            </a>
           </div>
-        )}
+        </div>
       </div>
 
       <Suspense fallback={<Loading />}>
