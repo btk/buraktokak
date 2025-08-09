@@ -62,14 +62,20 @@ export default function Home() {
     // ensure starting state
     el.classList.add('open')
     el.style.height = '0px'
-    // also animate padding for smoother reveal without jump
     el.style.paddingTop = '0px'
+    // prevent child transitions from affecting container height calculation
+    const spans = el.querySelectorAll('span')
+    spans.forEach(s => s.style.transition = 'none')
     // measure target height
     const target = el.scrollHeight
     // force reflow then animate to target height
     void el.offsetHeight
     el.style.height = target + 'px'
     el.style.paddingTop = '30px'
+    // restore transitions after starting animation
+    requestAnimationFrame(() => {
+      spans.forEach(s => s.style.transition = '')
+    })
     const onEnd = (e) => {
       if (e.propertyName !== 'height') return
       // keep auto height after opening so content is fully visible
@@ -256,7 +262,7 @@ export default function Home() {
           {topics ? <span>👇 Choose a topic below</span> : <span>💭 Get in touch with me</span>}
         </div>
         <div ref={tagsRef} className={`tags collapsible ${topics ? 'open' : ''}`} style={{ marginTop: 0 }}>
-          <div onClick={closeTopicsAnimated}>
+          <div className="tags-content" onClick={closeTopicsAnimated}>
             <a href="mailto:info@buraktokak.com?subject=[Work] Hi, Burak&body=I want to get in touch with you about work related stuff...">
               <span>💼 Work</span>
             </a>

@@ -749,6 +749,9 @@ pre tt:after {
 .tags.collapsible.open span:nth-child(7) { transition-delay: 210ms; }
 .tags.collapsible.open span:nth-child(8) { transition-delay: 240ms; }
 
+/* Ensure inner content doesn't affect measured height mid-transition */
+.tags-content { padding-bottom: 1px; }
+
 
 .contact {
   width: 250px;
