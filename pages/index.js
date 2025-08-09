@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense } from "react"
+import React, { useState, useEffect, Suspense, useRef } from "react"
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import SEO from '@/components/SEO'
@@ -54,6 +54,53 @@ export default function Home() {
   const [isBooksLoading, setIsBooksLoading] = useState(true)
   const [isGamesLoading, setIsGamesLoading] = useState(true)
   const [isTwemojiLoaded, setIsTwemojiLoaded] = useState(false)
+  const tagsRef = useRef(null)
+
+  const openTopicsAnimated = () => {
+    const el = tagsRef.current
+    if (!el) return
+    // ensure starting state
+    el.classList.add('open')
+    el.style.height = '0px'
+    // measure target height
+    const target = el.scrollHeight
+    // animate to target height
+    requestAnimationFrame(() => {
+      el.style.height = target + 'px'
+    })
+    const onEnd = (e) => {
+      if (e.propertyName !== 'height') return
+      el.style.height = ''
+      el.removeEventListener('transitionend', onEnd)
+    }
+    el.addEventListener('transitionend', onEnd)
+    setTopics(true)
+  }
+
+  const closeTopicsAnimated = () => {
+    const el = tagsRef.current
+    if (!el) return
+    // set explicit current height before collapsing
+    const current = el.scrollHeight
+    el.style.height = current + 'px'
+    // allow style to apply
+    requestAnimationFrame(() => {
+      el.classList.remove('open')
+      el.style.height = '0px'
+    })
+    const onEnd = (e) => {
+      if (e.propertyName !== 'height') return
+      el.style.height = ''
+      el.removeEventListener('transitionend', onEnd)
+    }
+    el.addEventListener('transitionend', onEnd)
+    setTopics(false)
+  }
+
+  const toggleTopicsAnimated = () => {
+    if (topics) closeTopicsAnimated()
+    else openTopicsAnimated()
+  }
 
   // Load cached data immediately in development
   useEffect(() => {
@@ -199,14 +246,13 @@ export default function Home() {
             // force reflow to restart animation if rapidly clicked
             void e.currentTarget.offsetWidth
             e.currentTarget.classList.add('clicked')
-            // preserve existing logic
-            setTopics(!topics)
+            toggleTopicsAnimated()
           }}
         >
           {topics ? <span>👇 Choose a topic below</span> : <span>💭 Get in touch with me</span>}
         </div>
-        <div className={`tags collapsible ${topics ? 'open' : ''}`} style={{ marginTop: 0 }}>
-          <div onClick={() => setTopics(false)}>
+        <div ref={tagsRef} className={`tags collapsible ${topics ? 'open' : ''}`} style={{ marginTop: 0 }}>
+          <div onClick={closeTopicsAnimated}>
             <a href="mailto:info@buraktokak.com?subject=[Work] Hi, Burak&body=I want to get in touch with you about work related stuff...">
               <span>💼 Work</span>
             </a>
