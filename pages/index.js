@@ -62,7 +62,6 @@ export default function Home() {
     // ensure starting state
     el.classList.add('open')
     el.style.height = '0px'
-    el.style.paddingTop = '0px'
     // prevent child transitions from affecting container height calculation
     const spans = el.querySelectorAll('span')
     spans.forEach(s => s.style.transition = 'none')
@@ -71,7 +70,6 @@ export default function Home() {
     // force reflow then animate to target height
     void el.offsetHeight
     el.style.height = target + 'px'
-    el.style.paddingTop = '30px'
     // restore transitions after starting animation
     requestAnimationFrame(() => {
       spans.forEach(s => s.style.transition = '')
@@ -92,12 +90,10 @@ export default function Home() {
     // set explicit current height before collapsing
     const current = el.scrollHeight
     el.style.height = current + 'px'
-    el.style.paddingTop = '30px'
     // force reflow then collapse
     void el.offsetHeight
     el.classList.remove('open')
     el.style.height = '0px'
-    el.style.paddingTop = '0px'
     const onEnd = (e) => {
       if (e.propertyName !== 'height') return
       el.style.height = ''

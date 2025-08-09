@@ -705,18 +705,16 @@ pre tt:after {
   opacity: 0;
   transform: translateY(-6px);
   margin: 0; /* keep constant to avoid layout jump */
-  padding-top: 0;
-  will-change: height, opacity, transform, margin, padding;
+  padding-top: 0; /* keep at 0; padding belongs to inner wrapper */
+  will-change: height, opacity, transform;
   transition:
     height 520ms cubic-bezier(0.22, 1, 0.36, 1),
     opacity 360ms ease-out,
-    transform 520ms cubic-bezier(0.22, 1, 0.36, 1),
-    padding 520ms ease;
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 .tags.collapsible.open {
   opacity: 1;
   transform: translateY(0);
-  padding-top: 30px;
 }
 
 /* Make sure height transition is enabled */
@@ -750,7 +748,7 @@ pre tt:after {
 .tags.collapsible.open span:nth-child(8) { transition-delay: 240ms; }
 
 /* Ensure inner content doesn't affect measured height mid-transition */
-.tags-content { padding-bottom: 1px; }
+.tags-content { padding-top: 30px; padding-bottom: 1px; }
 
 
 .contact {
