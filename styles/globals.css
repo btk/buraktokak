@@ -2,6 +2,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
 }
 
 /* Dark mode CSS custom properties */
@@ -39,6 +40,12 @@ body {
   color: var(--text-primary);
   /* Ensure smooth visibility transition */
   transition: visibility 0s;
+}
+
+/* Prevent any white flash by ensuring dark theme is applied immediately */
+html {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 /* Only apply transitions after theme is loaded */

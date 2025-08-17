@@ -14,9 +14,26 @@ class MyDocument extends Document {
           <style
             dangerouslySetInnerHTML={{
               __html: `
-                /* Prevent flash by hiding content until theme is loaded */
-                body { visibility: hidden; }
-                body.theme-loaded { visibility: visible; }
+                /* Aggressive flash prevention - hide everything and apply dark theme by default */
+                html, body { 
+                  visibility: hidden; 
+                  background-color: #1a1a1a !important;
+                  color: hsla(0, 0%, 100%, 0.9) !important;
+                }
+                body.theme-loaded { 
+                  visibility: visible; 
+                  background-color: var(--bg-primary) !important;
+                  color: var(--text-primary) !important;
+                }
+                /* Force dark theme on html element immediately */
+                html { 
+                  background-color: #1a1a1a !important;
+                  color: hsla(0, 0%, 100%, 0.9) !important;
+                }
+                html[data-theme="light"] {
+                  background-color: #ffffff !important;
+                  color: hsla(0, 0%, 0%, 0.7) !important;
+                }
               `,
             }}
           />
@@ -31,9 +48,20 @@ class MyDocument extends Document {
                       theme = prefersDark ? 'dark' : 'light';
                       localStorage.setItem('theme', theme);
                     }
+                    
+                    // Set theme immediately
                     document.documentElement.setAttribute('data-theme', theme);
                     
-                    // Add theme-loaded class to show content
+                    // Force immediate style application
+                    if (theme === 'dark') {
+                      document.documentElement.style.backgroundColor = '#1a1a1a';
+                      document.documentElement.style.color = 'hsla(0, 0%, 100%, 0.9)';
+                    } else {
+                      document.documentElement.style.backgroundColor = '#ffffff';
+                      document.documentElement.style.color = 'hsla(0, 0%, 0%, 0.7)';
+                    }
+                    
+                    // Add theme-loaded class to show content with proper transitions
                     document.body.classList.add('theme-loaded');
                   } catch (e) {
                     // Fallback: show content even if theme detection fails
@@ -41,10 +69,10 @@ class MyDocument extends Document {
                   }
                 })();
                 
-                // Fallback: ensure content is visible after 100ms
+                // Aggressive fallback: ensure content is visible after 50ms
                 setTimeout(function() {
                   document.body.classList.add('theme-loaded');
-                }, 100);
+                }, 50);
               `,
             }}
           />
