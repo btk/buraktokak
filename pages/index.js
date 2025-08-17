@@ -289,6 +289,18 @@ export default function Home() {
               <li>Publishing 🌍 <a href="https://store.steampowered.com/app/3678350/As_We_Unite/" target="_blank" rel="noopener noreferrer"><b>As We Unite</b></a>, <span>a political strategy simulation about cult management game</span></li>
               <li>Publishing ⚔️ <a href="https://store.steampowered.com/app/3702540/Between_Adventures_IDLE/" target="_blank" rel="noopener noreferrer"><b>Between Adventures IDLE</b></a>, <span>an idle RPG strategy game</span></li>
               <li>Making 🧩 <a href="https://learnai.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>LearnAI</b></a>, <span>a platform that turns learning into a game with quizzes and mini-games</span></li>
+              <li>Making 🛒 <a href="https://store.steampowered.com/app/3894830/Next_In_Line_Supermarket/" target="_blank" rel="noopener noreferrer"><b>Next In Line: Supermarket</b></a>, <span>a cashier PC game on Steam</span></li>
+              <li>Publishing 🍸 <a href="https://store.steampowered.com/app/3891400/Mixed_Spirits_Bartender_Simulator/" target="_blank" rel="noopener noreferrer"><b>Mixed Spirits: Bartender Simulator</b></a>, <span>a bartender PC game on Steam</span></li>
+              <li>Making 🛡️ <a href="https://store.steampowered.com/app/3894850/Nothing_To_Declare/" target="_blank" rel="noopener noreferrer"><b>Nothing To Declare</b></a>, <span>an airport security PC game on Steam</span></li>
+              <li>Publishing ♻️ <a href="https://store.steampowered.com/app/3899920/Recycling_Shift/" target="_blank" rel="noopener noreferrer"><b>Recycling Shift</b></a>, <span>a recycling facility PC game on Steam</span></li>
+              <li>Making 👕 <a href="https://store.steampowered.com/app/3936190/Dry_Hard_Laundry_Simulator/" target="_blank" rel="noopener noreferrer"><b>Dry Hard: Laundry Simulator</b></a>, <span>a dry cleaning shop PC game on Steam</span></li>
+              <li>Making 🏖️ <a href="https://store.steampowered.com/app/3939700/Treasure_Beach/" target="_blank" rel="noopener noreferrer"><b>Treasure Beach</b></a>, <span>a beach scavenging PC game on Steam</span></li>
+              <li>Making 🍋 <a href="https://store.steampowered.com/app/3941810/Cozy_Lemonade_Stand/" target="_blank" rel="noopener noreferrer"><b>Cozy Lemonade Stand</b></a>, <span>a lemonade stand PC game on Steam</span></li>
+              <li>Publishing 📸 <a href="https://store.steampowered.com/app/3946330/Snap__Print/" target="_blank" rel="noopener noreferrer"><b>Snap & Print</b></a>, <span>a photo shop PC game on Steam</span></li>
+              <li>Publishing 🍇 <a href="https://store.steampowered.com/app/3946550/Sunny_Orchard/" target="_blank" rel="noopener noreferrer"><b>Sunny Orchard</b></a>, <span>a fruit orchard PC game on Steam</span></li>
+              <li>Making 🌱 <a href="https://store.steampowered.com/app/3953410/Garden_Hustle/" target="_blank" rel="noopener noreferrer"><b>Garden Hustle</b></a>, <span>a gardening service PC game on Steam</span></li>
+              <li>Publishing 💰 <a href="https://store.steampowered.com/app/3963860/Tax_It_Easy/" target="_blank" rel="noopener noreferrer"><b>Tax It Easy</b></a>, <span>a tax scrutiny PC game on Steam</span></li>
+              <li>Publishing 🌸 <a href="https://store.steampowered.com/app/3962270/Perfume_Atelier/" target="_blank" rel="noopener noreferrer"><b>Perfume Atelier</b></a>, <span>a perfume crafting PC game on Steam</span></li>
             </ul>
           </div>
         </Twemoji>
