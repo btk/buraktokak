@@ -299,7 +299,7 @@ export default function Home() {
           <div className="made">
             <h3>Past</h3>
             <ul>
-              <li>Made 🌀 <a href="https://singularity.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>Singularity</b></a>, <span>a tool for creating and managing AI agents</span></li>
+              <li>Made 🌀 <a href="https://singularity.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>Singularity Wizard</b></a>, <span>a checklist for getting ready to manage singularity AI agents</span></li>
               <li>Made 🐋 <a href="https://www.steampeek.net/" target="_blank" rel="noopener noreferrer"><b>steampeek</b></a>, <span>a Steam market intelligence platform for game developers</span></li>
               <li>Made 📊 <a href="https://steam-regional-charts.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>Steam Regional Charts</b></a>, <span>a tool to browse new & trending games in different regions on Steam</span></li>
               <li>Made 🚚 <a href="https://store.steampowered.com/app/3496000/Ship_Inc/" target="_blank" rel="noopener noreferrer"><b>Ship, Inc.</b></a>, <span>a parcel packaging PC game on Steam</span></li>
