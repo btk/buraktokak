@@ -311,7 +311,7 @@ export default function Home() {
           <div className="made">
             <h3>Past</h3>
             <ul>
-              <li>Made 🎨 <a href="https://steamcapsule.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>Steam Capsule Analyzer</b></a>, <span>a professional analysis tool for optimizing Steam capsule art</span></li>
+              <li>Made 🎨 <a href="https://steamcapsule.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>Steam Capsule Analyzer</b></a>, <span>a visual analysis tool for optimizing Steam capsules</span></li>
               <li>Made 🌀 <a href="https://singularity.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>Singularity Wizard</b></a>, <span>a checklist for getting ready to manage singularity AI agents</span></li>
               <li>Made 🐋 <a href="https://www.steampeek.net/" target="_blank" rel="noopener noreferrer"><b>steampeek</b></a>, <span>a Steam market intelligence platform for game developers</span></li>
               <li>Made 📊 <a href="https://steam-regional-charts.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>Steam Regional Charts</b></a>, <span>a tool to browse new & trending games in different regions on Steam</span></li>
