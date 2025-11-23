@@ -280,9 +280,7 @@ export default function Home() {
               <li>Working for 🦆 <a href="http://rogueduck.net/" target="_blank" rel="noopener noreferrer"><b>Rogue Duck Interactive</b></a>, <span>making & publishing indie strategy & sim games</span></li>
               <li>Making    🥽 <a href="https://vrux.co/" target="_blank" rel="noopener noreferrer"><b>VRUX</b></a>, <span>a virtual reality interface & experience prototying tool</span></li>
               <li>Making 🚢 <a href="https://store.steampowered.com/app/2755950/Tidebound/" target="_blank" rel="noopener noreferrer"><b>Tidebound</b></a>, <span>a fishing & inventory management game</span></li>
-              <li>Publishing 🐱 <a href="https://store.steampowered.com/app/3521410/Cats__Cups/" target="_blank" rel="noopener noreferrer"><b>Cats & Cups</b></a>, <span>a 2d barista sim PC game on Steam</span></li>
               <li>Publishing 🎮 <a href="https://store.steampowered.com/app/3683940/Replay_Value_Second_Hand_Games/" target="_blank" rel="noopener noreferrer"><b>Replay Value</b></a>, <span>a job simulator where you run a second-hand game store on Steam</span></li>
-              <li>Publishing 💌 <a href="https://store.steampowered.com/app/3771390/Carefully_Stamped/" target="_blank" rel="noopener noreferrer"><b>Carefully Stamped</b></a>, <span>a cozy postcard-making sandbox game on Steam</span></li>
               <li>Making 🏪 <a href="https://store.steampowered.com/app/3622640/Vending_Machine_Co/" target="_blank" rel="noopener noreferrer"><b>Vending Machine Co.</b></a>, <span>a cozy vending machine business simulator</span></li>
               <li>Publishing 🌍 <a href="https://store.steampowered.com/app/3678350/As_We_Unite/" target="_blank" rel="noopener noreferrer"><b>As We Unite</b></a>, <span>a political strategy simulation about cult management game</span></li>
               <li>Publishing ⚔️ <a href="https://store.steampowered.com/app/3702540/Between_Adventures_IDLE/" target="_blank" rel="noopener noreferrer"><b>Between Adventures IDLE</b></a>, <span>an idle RPG strategy game</span></li>
@@ -311,6 +309,8 @@ export default function Home() {
           <div className="made">
             <h3>Past</h3>
             <ul>
+              <li>Published 💌 <a href="https://store.steampowered.com/app/3771390/Carefully_Stamped/" target="_blank" rel="noopener noreferrer"><b>Carefully Stamped</b></a>, <span>a cozy postcard-making sandbox game on Steam</span></li>
+              <li>Published 🐱 <a href="https://store.steampowered.com/app/3521410/Cats__Cups/" target="_blank" rel="noopener noreferrer"><b>Cats & Cups</b></a>, <span>a 2d barista sim PC game on Steam</span></li>
               <li>Published 🔮 <a href="https://store.steampowered.com/app/3415230/Witchy_Business/" target="_blank" rel="noopener noreferrer"><b>Witchy Business</b></a>, <span>a witch job-simulator game on Steam</span></li>
               <li>Made 🗂 <a href="https://store.steampowered.com/app/3415240/Cozy_Organizer/" target="_blank" rel="noopener noreferrer"><b>Cozy Organizer</b></a>, <span>an scene organization game on Steam</span></li>
               <li>Made 🎨 <a href="https://steamcapsule.t8l.dev/" target="_blank" rel="noopener noreferrer"><b>Steam Capsule Analyzer</b></a>, <span>a professional analysis tool for optimizing Steam capsule art</span></li>
